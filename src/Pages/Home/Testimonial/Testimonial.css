@@ -284,5 +284,33 @@
     .testimonial-carousel {
         margin-left: 55px;
         margin-right: 55px;
+        margin-top: -306px;
+    }
+
+    .testimonial {
+        padding-top: 60px;
+        padding-bottom: 320px;
+    }
+
+    .testimonial-card {
+        margin: auto;
+        width: 200px !important;
+    }
+
+    .testimonial-top .testimonial-desc {
+        padding-top: 13px;
+        font-size: 13px;
+    }
+
+    .testimonial-bottom {
+        padding: 15px 15px;
+    }
+
+    .testimonial-bottom img {
+        width: 50px !important;
+    }
+
+    .testimonial-bottom p {
+        font-size: 12px;
     }
 }

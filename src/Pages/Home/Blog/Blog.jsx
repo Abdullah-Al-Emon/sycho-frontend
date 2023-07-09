@@ -20,7 +20,7 @@ const Blog = () => {
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-4">
+                    <div className="col-lg-4 col-md-6">
                         <div className="blog-card">
                             <div className="blog-img">
                                 <img src={b1_img} alt="" />
@@ -39,7 +39,7 @@ const Blog = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4">
+                    <div className="col-lg-4 col-md-6">
                         <div className="blog-card">
                             <div className="blog-img">
                                 <img src={b2_img} alt="" />
@@ -58,7 +58,7 @@ const Blog = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4">
+                    <div className="col-lg-4 col-md-6">
                         <div className="blog-card">
                             <div className="blog-img">
                                 <img src={b3_img} alt="" />

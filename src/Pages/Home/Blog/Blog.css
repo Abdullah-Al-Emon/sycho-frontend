@@ -1,18 +1,18 @@
-.blog-section{
+.blog-section {
     padding-top: 0px;
     padding-bottom: 80px;
 }
 
-.blog-top{
+.blog-top {
     text-align: center;
     padding-bottom: 18px;
 }
 
-.blog-top .blog-logo img{
+.blog-top .blog-logo img {
     padding-bottom: 10px;
 }
 
-.blog-top .blog-title h2{
+.blog-top .blog-title h2 {
     color: var(--primary-color);
     font-size: 45px;
     font-family: var(--font-cormorant);
@@ -21,7 +21,7 @@
     padding-bottom: 10px;
 }
 
-.blog-top .blog-title p{
+.blog-top .blog-title p {
     color: #848b8a;
     font-family: var(--font-rubik);
     font-size: 14px;
@@ -29,15 +29,15 @@
     padding-bottom: 20px;
 }
 
-.blog-card{
+.blog-card {
     width: 350px;
 }
 
-.blog-card .blog-img img{
+.blog-card .blog-img img {
     width: 400px;
 }
 
-.blog-card .blog-desc{
+.blog-card .blog-desc {
     margin-top: -80px;
     padding: 20px 20px;
     background-color: #fbf7f3;
@@ -45,7 +45,7 @@
     position: relative;
 }
 
-.blog-desc .blog-date{
+.blog-desc .blog-date {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -57,18 +57,18 @@
     background-color: var(--primary-bg-color);
 }
 
-.blog-date .date{
+.blog-date .date {
     font-size: 25px;
     font-family: var(--font-rubik);
     font-weight: 600;
 }
 
-.blog-date .month{
+.blog-date .month {
     font-size: 15px;
     font-family: var(--font-rubik);
 }
 
-.blog-desc .top-icon-div{
+.blog-desc .top-icon-div {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -77,17 +77,17 @@
     padding-bottom: 20px;
 }
 
-.top-icon-div span{
+.top-icon-div span {
     font-size: 16px;
     font-family: var(--font-rubik);
 }
 
-.top-icon-div img{
+.top-icon-div img {
     height: 20px;
     width: 20px;
 }
 
-.blog-desc h3{
+.blog-desc h3 {
     color: var(--primary-color);
     font-family: var(--font-cormorant);
     font-size: 27px;
@@ -95,12 +95,12 @@
     padding-bottom: 25px;
 }
 
-.bottom-icon-div{
+.bottom-icon-div {
     display: flex;
     gap: 15px;
 }
 
-.blog-desc .bottom-icon-div div{
+.blog-desc .bottom-icon-div div {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -108,12 +108,64 @@
     padding-bottom: 15px;
 }
 
-.bottom-icon-div div span{
+.bottom-icon-div div span {
     font-size: 16px;
     font-family: var(--font-rubik);
 }
 
-.bottom-icon-div div img{
+.bottom-icon-div div img {
     height: 20px;
     width: 20px;
+}
+
+@media (max-width: 1399px) {
+    .blog-card .blog-img img {
+        width: 360px;
+    }
+}
+
+@media (max-width:1200px) {
+    .blog-card .blog-img img {
+        width: 310px;
+    }
+
+    .blog-card .blog-desc {
+        width: 280px;
+    }
+    .blog-desc h3 {
+        font-size: 20px;
+    }
+    .bottom-icon-div div img {
+        height: 16px;
+        width: 16px;
+    }
+    .bottom-icon-div div span {
+        font-size: 13px;
+        font-family: var(--font-rubik);
+    }
+    .top-icon-div img {
+        height: 16px;
+        width: 16px;
+    }
+    .top-icon-div span {
+        font-size: 14px;
+        font-family: var(--font-rubik);
+    }
+    .blog-date .date {
+        font-size: 22px;
+    }
+    .blog-date .month {
+        font-size: 13px;
+    }
+    .blog-desc .bottom-icon-div div {
+        gap: 5px;
+    }
+}
+
+@media (max-width:991px) {
+    .blog-card {
+        margin: auto;
+        padding-bottom: 20px;
+        width: 310px;
+    }
 }
