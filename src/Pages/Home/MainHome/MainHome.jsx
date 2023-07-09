@@ -8,7 +8,7 @@ import About from '../About/About';
 import Service from '../Service/Service';
 import Appointment from '../Appointment/Appointment';
 import Case from '../Case/Case';
-import Client from '../Client/client';
+import Client from '../Client/Client';
 import Cost from '../Cost/Cost';
 import Contact from '../Contact/contact';
 import Testimonial from '../Testimonial/Testimonial';

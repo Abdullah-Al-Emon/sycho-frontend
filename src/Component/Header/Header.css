@@ -506,4 +506,7 @@
         padding-top: 25px;
         padding-bottom: 20px;
     }
+    .mobile-menu-sidebar .menu-sidebar {
+        padding: 55px 0px 30px;
+    }
 }
