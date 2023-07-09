@@ -1,5 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import "react-owl-carousel2/src/owl.carousel.css";
+import "react-owl-carousel2/src/owl.theme.default.css";
+import 'react-owl-carousel2/lib/styles.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';

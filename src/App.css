@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Open+Sans&family=Rubik&display=swap');
+/* @import '~bootstrap/scss/bootstrap'; */
+/* @import 'bootstrap/dist/css/bootstrap.min.css'; */
+
+:root {
+  --body-color: #222222;
+  --primary-color: #005046;
+  --primary-bg-color: #056c5f;
+  --heading-color: #f8a683;
+  --section-bg: #ffffff;
+  --font-cormorant: 'Cormorant Garamond', serif;
+  --font-rubik: 'Rubik', sans-serif;
+  --font-open: 'Open Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: var(--section-bg);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--section-bg);
+  font-family: 'Cormorant Garamond', serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none;
+  transition: all .4s ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a,
+button {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

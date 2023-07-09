@@ -1,0 +1,357 @@
+.footer-section {
+    background-color: #151616;
+}
+
+.footer-bottom {
+    padding: 35px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #2d2e2e;
+}
+
+.footer-bottom-left p {
+    font-family: var(--font-rubik);
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #bababa;
+}
+
+.footer-bottom-left p span {
+    color: var(--heading-color);
+}
+
+.footer-bottom-right p,
+a {
+    font-family: var(--font-rubik);
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #bababa;
+}
+
+.footer-bottom-right a:hover {
+    color: var(--heading-color);
+}
+
+.footer-top {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-brand {
+    background-image: url('../../assets/image/footer-top-bg.png');
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.brand-title {
+    border-radius: 15px;
+    background-color: var(--primary-bg-color);
+    padding: 24px 20px;
+    color: var(--section-bg);
+    font-family: var(--font-cormorant);
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.brand-logo-all{
+    padding-top: 8px;
+}
+
+.brand-logo-all img {
+    width: 180px !important;
+    margin: auto !important;
+}
+
+.footer-main {
+    padding-top: 90px;
+}
+
+.footer-logo img {
+    max-width: 100%;
+}
+
+.footer-about-content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-about-content p {
+    color: #a1a2a2;
+    font-size: 16px;
+    font-family: var(--font-rubik);
+}
+
+.footer-social h4 {
+    font-family: var(--font-cormorant);
+    font-size: 27px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.footer-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-icon span {
+    background: #444545;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 7px 7px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    color: var(--section-bg);
+}
+
+.footer-icon span:hover {
+    background-color: var(--heading-color);
+}
+
+.footer-icon span:last-child {
+    margin-right: 0px;
+}
+
+.footer-main h3 {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: var(--font-cormorant);
+    padding-bottom: 20px;
+}
+
+.footer-service ul li {
+    padding-bottom: 6px;
+}
+
+.footer-service ul li a {
+    font-size: 16px;
+    padding-left: 15px;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+
+.footer-service ul li a::before {
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 0;
+    height: 1px;
+    width: 10px;
+    transition: all .3s ease-in-out;
+    background-color: var(--section-bg);
+}
+
+.footer-service ul li a:hover::before {
+    background-color: var(--heading-color);
+}
+
+.footer-service ul li a:hover {
+    color: var(--heading-color);
+}
+
+.footer-info-details {
+    font-size: 16px;
+    font-family: var(--font-rubik);
+    font-weight: 400;
+    color: #bababa;
+}
+
+.footer-info-address {
+    padding-top: 16px;
+}
+
+.footer-info-address p {
+    color: var(--heading-color);
+    font-family: var(--font-rubik);
+    font-size: 16px;
+}
+
+.footer-info-address a {
+    font-size: 16px;
+    font-family: var(--font-rubik);
+    font-weight: 400;
+    color: #bababa;
+}
+
+.footer-info-address a:hover {
+    color: var(--heading-color);
+}
+
+.footer-touch-desc p {
+    font-size: 16px;
+    font-family: var(--font-rubik);
+    font-weight: 400;
+    color: #bababa;
+}
+
+.footer-input-div {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 17px;
+}
+
+.footer-input-div input {
+    width: 100%;
+    padding: 22px 35px;
+    border-radius: 42px 4px 42px 4px;
+    outline: none;
+    border: 0;
+    transition: all .3s ease-in-out;
+}
+
+.footer-input-div input:focus{
+    outline: 1px solid var(--primary-bg-color);
+}
+
+.footer-input-div span {
+    position: absolute;
+    top: 40px;
+    right: 28px;
+    color: var(--heading-color);
+}
+
+.footer-touch-desc button{
+    color: var(--section-bg);
+    background-color: var(--primary-bg-color);
+    font-family: var(--font-rubik);
+    transition: all .4s ease-in-out;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 22px 40px;
+    border-radius: 3px 42px 42px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-touch-desc button:hover{
+    color: var(--primary-color);
+    background-color: var(--heading-color);
+}
+
+
+
+@media (max-width:1300px) {
+    .footer-about-content p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:1200px) {
+    .brand-title {
+        padding: 25px 20px;
+        font-size: 40px;
+        height: 100%;
+    }
+    .brand-logo-all img {
+        width: 160px !important;
+        margin: auto !important;
+    }
+    .footer-icon {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-input-div input {
+        padding: 20px 26px;
+    }
+    .footer-touch-desc button {
+        font-size: 12px;
+        padding: 20px 25px;
+    }
+}
+
+@media (max-width:991px) {
+    .footer-bottom {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer-icon {
+        justify-content: start;
+    }
+    .footer-main {
+        padding-top: 60px;
+    }
+    .footer-top {
+        padding-top: 80px;
+        padding-bottom: 40px;
+    }
+    .brand-title {
+        padding: 24px 20px;
+        font-size: 37px;
+        height: 100%;
+    }
+    .brand-logo-all img {
+        width: 155px !important;
+        margin: auto !important;
+    }
+    .footer-info, .footer-touch{
+        padding-top: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-service{
+        padding-top: 25px;
+    }
+}
+
+@media (max-width: 575px) {
+    .footer-bottom-left p, .footer-bottom-right p, a  {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .brand-logo-all img {
+        width: 150px !important;
+    }
+
+    .brand-title {
+        font-size: 35px;
+    }
+    .footer-service, .footer-info, .footer-touch, .footer-about{
+        padding-left: 35px;
+    }
+    .footer-social h4 {
+        margin-bottom: 16px;
+    }
+    .footer-about-content {
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width:400px) {
+    .footer-service ul li a {
+        font-size: 14px;
+    }
+
+    .footer-info p span, .footer-touch p span, .footer-about p span {
+        font-size: 15px;
+    }
+    .footer-main h3 {
+        font-size: 28px;
+        padding-bottom: 15px;
+    }
+    .footer-social h4 {
+        font-size: 25px;
+    }
+    .footer-touch-desc p {
+        font-size: 15px;
+    }
+    .footer-info-details p{
+        font-size: 15px;
+    }
+    .footer-info-address p {
+        font-size: 15px;
+    }
+    .footer-info-address a {
+        font-size: 15px;
+    }
+}

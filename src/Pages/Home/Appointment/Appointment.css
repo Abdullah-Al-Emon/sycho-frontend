@@ -1,0 +1,485 @@
+.appointment-section {
+    padding-top: 100px;
+    padding-bottom: 90px;
+}
+
+.doctor-info {
+    background-image: url('../../../assets/image/feture-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 65px;
+    padding-bottom: 70px;
+}
+
+.doctor-img {
+    text-align: right;
+}
+
+.doctor-img img {
+    height: 730px;
+    margin-top: -120px;
+    margin-right: -110px;
+}
+
+.doctor-content {
+    padding-top: 55px;
+}
+
+.doctor-content h3 {
+    font-size: 50px;
+    font-family: var(--font-cormorant);
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 13px;
+}
+
+.doctor-content h5 {
+    font-size: 27px;
+    font-family: var(--font-cormorant);
+    font-weight: 600;
+    color: #3b615e;
+    margin-bottom: 18px;
+}
+
+.doctor-content p {
+    font-size: 16px;
+    font-family: var(--font-rubik);
+    font-weight: 400;
+    color: #848b8a;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.doctor-button {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.doctor-button button {
+    color: var(--section-bg);
+    background-color: var(--primary-bg-color);
+    font-family: var(--font-rubik);
+    transition: all .4s ease-in-out;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 22px 50px;
+    border-radius: 3px 42px 42px;
+}
+
+.doctor-button button:hover {
+    color: var(--primary-color);
+    background-color: var(--heading-color);
+}
+
+.appointment {
+    margin-top: -175px;
+    margin-left: 120px;
+    margin-right: 150px;
+    box-shadow: 10px 20px 10px #f6f8f8;
+}
+
+.appointment-left h3 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    font-family: var(--font-cormorant);
+    background-color: var(--primary-bg-color);
+    padding: 40px 10px;
+}
+
+.appointment-left .appointment-form {
+    padding: 30px 30px;
+    background: #f8a683;
+}
+
+.appointment-form .appointment-input {
+    font-size: 15px;
+    font-family: var(--font-rubik);
+    /* outline: 0; */
+    width: 100%;
+    display: inline-block;
+    border: 0;
+    margin-bottom: 15px;
+    opacity: 0.5;
+    padding: 17px 15px;
+    border-radius: 5px;
+}
+
+.appointment-form .appointment-input:focus {
+    outline: #f8a683;
+}
+
+.appointment-form button {
+    width: 100%;
+    color: var(--section-bg);
+    border: 0;
+    background-color: var(--primary-bg-color);
+    padding: 20px 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: var(--font-rubik);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.appointment-form button:hover {
+    color: var(--primary-color);
+    background-color: var(--section-bg);
+}
+
+.appointment-right {
+    background-color: var(--section-bg);
+    height: 100%;
+    padding-left: 50px;
+    padding-top: 60px;
+    padding-right: 40px;
+}
+
+.appointment-right .logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.appointment-right .logo span {
+    font-size: 14px;
+    font-family: var(--font-rubik);
+    color: #3b615e;
+    text-transform: uppercase;
+}
+
+.appointment-right h2 {
+    font-size: 45px;
+    font-weight: 600;
+    font-family: var(--font-cormorant);
+    color: var(--primary-color);
+    padding-bottom: 40px;
+}
+
+.all-count {
+    padding: 0px 50px 0px 10px;
+}
+
+.all-count .customer-count {
+    border-bottom: 1px solid #dfe3e2;
+}
+
+.all-count .customer-count .single-count {
+    display: inline-block;
+    border-right: 1px solid #dfe3e2;
+    padding-right: 60px;
+    padding-bottom: 20px;
+}
+
+.all-count .customer-count .single-count:last-child {
+    border-right: none;
+    padding-right: 0px;
+    padding-left: 60px;
+}
+
+.orange {
+    color: var(--heading-color);
+}
+
+.green {
+    color: var(--primary-color);
+}
+
+.number {
+    display: block;
+    font-size: 60px;
+    font-family: var(--font-rubik);
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    line-height: 50px;
+}
+
+.text {
+    display: block;
+    font-size: 27px;
+    font-family: var(--font-rubik);
+    color: #848b8a;
+}
+
+.all-count .second-customer-count .second-single-count {
+    display: inline-block;
+    border-right: 1px solid #dfe3e2;
+    padding-top: 20px;
+    padding-right: 63px;
+    padding-bottom: 10px;
+}
+
+.all-count .second-customer-count .second-single-count:last-child {
+    border-right: none;
+    padding-right: 0px;
+    padding-left: 60px;
+}
+
+@media (max-width:1399px) {
+    .appointment {
+        margin-left: 50px;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .doctor-img img {
+        height: 665px;
+
+    }
+
+    .number {
+        font-size: 55px;
+    }
+
+    .text {
+        font-size: 25px;
+    }
+
+    .doctor-content {
+        padding-top: 0px;
+    }
+
+    .doctor-content h3 {
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+
+    .doctor-content h5 {
+        font-size: 25px;
+        margin-bottom: 14px;
+    }
+
+    .doctor-content p {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    .appointment {
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+
+    .appointment-right {
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+
+    .appointment-form button {
+        padding: 17px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 991px) {
+    .doctor-img {
+        text-align: left;
+    }
+
+    .doctor-img img {
+        height: 570px;
+    }
+
+    .doctor-info {
+        padding-bottom: 190px;
+    }
+
+    .appointment-left h3 {
+        font-size: 30px;
+    }
+
+    .appointment-left .appointment-form {
+        padding: 25px 17px;
+    }
+
+    .appointment-form .appointment-input {
+        padding: 13px 15px;
+    }
+
+    .appointment-right {
+        padding-top: 30px;
+    }
+
+    .appointment-right h2 {
+        font-size: 36px;
+        padding-bottom: 35px;
+    }
+
+    .all-count {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .number {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .text {
+        display: block;
+        font-size: 18px;
+        font-family: var(--font-rubik);
+        color: #848b8a;
+    }
+
+    .all-count .second-customer-count .second-single-count {
+        padding-right: 60px;
+    }
+
+    .appointment {
+        margin-top: -116px;
+    }
+}
+
+@media (max-width: 767px) {
+    .appointment-section {
+        padding-top: 70px;
+        padding-bottom: 90px;
+    }
+
+    .doctor-img img {
+        height: 494px;
+    }
+
+    .doctor-content h3 {
+        font-size: 40px;
+    }
+
+    .doctor-content h5 {
+        font-size: 22px;
+    }
+
+    .appointment-right {
+        padding-bottom: 30px;
+    }
+
+    .all-count .second-customer-count .second-single-count {
+        padding-left: 40px;
+        padding-right: 70px;
+    }
+
+    .all-count .customer-count .single-count {
+        padding-right: 70px;
+        padding-left: 41px;
+    }
+}
+
+@media (max-width: 575px) {
+    .doctor-img img {
+        height: 430px;
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    .doctor-content h5 {
+        font-size: 18px;
+    }
+
+    .doctor-content p {
+        font-size: 14px;
+    }
+
+    .doctor-button button {
+        font-size: 12px;
+        padding: 20px 40px;
+    }
+
+    .appointment-left h3 {
+        padding: 30px 10px;
+    }
+
+    .appointment {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .all-count .customer-count .single-count {
+        padding-right: 50px;
+        padding-left: 30px;
+    }
+
+    .all-count .second-customer-count .second-single-count {
+        padding-left: 30px;
+        padding-right: 52px;
+    }
+
+    .all-count .customer-count .single-count:last-child,
+    .all-count .second-customer-count .second-single-count:last-child {
+        padding-left: 40px;
+    }
+
+    .number {
+        font-size: 40px;
+        line-height: 35px;
+    }
+
+    .text {
+        display: block;
+        font-size: 17px;
+    }
+
+    .appointment-right h2 {
+        font-size: 30px;
+        padding-bottom: 28px;
+    }
+}
+
+@media (max-width: 390px) {
+    .appointment-left h3 {
+        font-size: 26px;
+        padding: 30px 10px;
+    }
+
+    .appointment-right h2 {
+        font-size: 27px;
+        padding-bottom: 25px;
+    }
+
+    .all-count .customer-count .single-count {
+        padding-left: 20px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+    }
+
+    .all-count .second-customer-count .second-single-count {
+        padding-left: 20px;
+        padding-right: 31px;
+    }
+
+    .all-count .customer-count .single-count:last-child,
+    .all-count .second-customer-count .second-single-count:last-child {
+        padding-left: 25px;
+
+    }
+
+    .number {
+        font-size: 33px;
+        line-height: 35px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 370px) {
+    .doctor-button {
+        gap: 20px
+    }
+
+    .doctor-button button {
+        font-size: 12px;
+        padding: 20px 25px;
+    }
+
+    .doctor-img img {
+        height: 365px;
+    }
+}

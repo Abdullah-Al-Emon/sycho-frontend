@@ -1,0 +1,228 @@
+.case-section {
+    background-image: url('../../../assets/image/feture-bg.png');
+    background-repeat: no-repeat;
+    padding-top: 210px;
+    padding-bottom: 100px;
+}
+
+.case-carousel {
+    margin-bottom: -210px;
+    position: relative;
+}
+
+.case-carousel .owl-carousel .owl-item img {
+    height: 400px;
+    width: 460px !important;
+    transform: scale(0.9);
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+.case-carousel .owl-item.active.center img {
+    padding: 0px 10px;
+    transform: scale(1.15);
+    opacity: 1;
+}
+
+.owl-nav .owl-prev {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 5px;
+    opacity: 1;
+    font-size: 40px !important;
+    z-index: 1;
+    transition: all 0.3s;
+    transform: scale(1);
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+    color: #FFF;
+    font-size: 30px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: transparent;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px; 
+}
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background-color: transparent;
+    transform: scale(1.15);
+}
+
+.owl-nav .owl-prev::after{
+    position: absolute;
+    content: '';
+    top: 35%;
+    left: 0;
+    opacity: 1;
+    z-index: 2;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.owl-nav .owl-prev:hover::after{
+    border: 3px solid #FFF;
+}
+
+.owl-nav .owl-next {
+    position: absolute;
+    top: calc(50% - 25px);
+    right: 5px;
+    opacity: 1;
+    font-size: 40px !important;
+    z-index: 1;
+    transition: all 0.3s;
+    transform: scale(1);
+}
+
+.owl-nav .owl-next::after{
+    position: absolute;
+    content: '';
+    top: 35%;
+    right: 0;
+    opacity: 1;
+    z-index: 2;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.owl-nav .owl-next:hover::after{
+    border: 3px solid #FFF;
+}
+
+.case-carousel .owl-item.active.center .case-title {
+    left: 0%;
+    bottom: 5%;
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.case-carousel .case-title{
+    position: absolute;
+    height: 70px;
+    width: 320px;
+    font-size: 28px;
+    left: -30%;
+    bottom: -5%;
+    padding-top: 13px;
+    padding-left: 15px;
+    font-weight: bold;
+    visibility: hidden;
+    opacity: 0.6;
+    transition: all 0.5s ease-in;
+    transform: scale(0.6);
+    font-family: var(--font-cormorant);
+    background: var(--section-bg);
+    color: var(--primary-color);
+}
+
+.case-carousel .case-title::before{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    content: '';
+    height: 70px;
+    width: 4px;
+    background-color: var(--heading-color);
+}
+
+
+.case-carousel .case-title span{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: var(--primary-bg-color);
+    color: var(--section-bg);
+}
+
+@media (max-width: 1390px) {
+    .case-carousel .owl-carousel .owl-item img {
+        height: 400px;
+        width: 430px !important;
+    }
+}
+
+@media (max-width: 1300px) {
+    .case-carousel .owl-carousel .owl-item img {
+        height: 400px;
+        width: 400px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .case-carousel .owl-carousel .owl-item img {
+        height: 370px;
+        width: 370px !important;
+    }
+}
+
+@media (max-width: 1120px) {
+    .case-carousel .owl-carousel .owl-item img {
+        height: 330px;
+        width: 330px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .case-carousel .owl-carousel .owl-item img {
+        height: 290px;
+        width: 280px !important;
+    }
+    .case-carousel .case-title {
+        position: absolute;
+        height: 50px;
+        width: 230px;
+        font-size: 20px;
+    }    
+    .case-carousel .case-title::before {
+        position: absolute;
+        height: 50px;
+    }
+    .case-carousel .case-title span {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 835px) {
+    .case-carousel .owl-carousel .owl-item img {
+        height: 240px;
+        width: 240px !important;
+    }
+    .case-carousel .case-title {
+        position: absolute;
+        height: 50px;
+        width: 200px;
+        font-size: 20px;
+        padding: 10px 10px;
+    }    
+    .case-carousel .case-title::before {
+        position: absolute;
+        height: 50px;
+    }
+    .case-carousel .case-title span {
+        width: 28px;
+        height: 30px;
+    }
+    .case-carousel .case-title span svg {
+        height: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .case-carousel .owl-carousel .owl-item img {
+       margin: auto;
+    }
+    .case-carousel .owl-item.active.center .case-title {
+        left: 24%;
+    }
+}

@@ -1,0 +1,61 @@
+.banner{
+    background-image: url('../../../assets/image/banner-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1;
+}
+
+.banner .owl-carousel {
+    position: relative;
+}
+
+.banner .owl-carousel .owl-dots{
+    position: absolute;
+    bottom: 9%;
+    right: 31%;
+    display: flex;
+    gap: 25px;
+}
+
+.banner .owl-carousel .owl-dots .owl-dot{
+    position: relative;
+}
+
+.banner .owl-carousel .owl-dots .owl-dot span{
+    font-family: var(--font-rubik);
+    color: var(--section-bg);
+    background-color: transparent;
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.banner .owl-carousel .owl-dots .owl-dot span::after{
+    content: '|';
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 60%;
+    font-size: 0px;
+    visibility: hidden;
+    z-index: 999;
+    color: var(--heading-color);
+    transform-origin: top center;
+    transition: all .4s ease-in-out;
+
+}
+
+.banner .owl-carousel .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: transparent; 
+    color: var(--heading-color);
+}
+.banner .owl-carousel .owl-dots .owl-dot.active span::after, .owl-theme .owl-dots .owl-dot:hover span::after {
+    top: 25px;
+    font-size: 18px;
+    visibility: visible;
+}
+
+

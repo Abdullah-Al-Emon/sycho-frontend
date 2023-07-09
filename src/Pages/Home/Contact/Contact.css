@@ -1,0 +1,194 @@
+.contact-section {
+    background-image: url('../../../assets/image/client-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 90px;
+    padding-bottom: 330px;
+    position: relative;
+}
+
+.contact-left {
+    padding-right: 30px;
+}
+
+.contact-left .logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.contact-left .logo span {
+    font-size: 14px;
+    font-family: var(--font-rubik);
+    color: var(--section-bg);
+    text-transform: uppercase;
+}
+
+.contact-left h2 {
+    font-size: 45px;
+    font-weight: 600;
+    font-family: var(--font-cormorant);
+    color: var(--section-bg);
+    padding-bottom: 40px;
+}
+
+.contact-form .input-div {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-form input,
+select,
+textarea {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    padding: 14px 20px;
+    border: 0;
+    opacity: 0.6;
+}
+
+.contact-form button {
+    color: var(--section-bg);
+    background-color: var(--heading-color);
+    font-family: var(--font-rubik);
+    transition: all .4s ease-in-out;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 22px 50px;
+    border-radius: 3px 42px 42px;
+    margin-top: 10px;
+    margin-bottom: -25px;
+}
+
+.contact-form button:hover {
+    color: var(--body-color);
+    background-color: var(--section-bg);
+}
+
+.contact-form textarea:focus,
+input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+.contact-form input::placeholder,
+textarea::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.contact-right .map {
+    width: 700px;
+    height: 780px;
+    position: absolute;
+    right: 0px;
+    margin-top: -160px;
+    max-width: 100%;
+    border-radius: 15px 0px 0px 15px;
+    z-index: 9;
+}
+
+@media (max-width: 1350px) {
+    .contact-right .map {
+        width: 620px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .contact-right .map {
+        width: 550px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .contact-right .map {
+        width: 500px;
+    }
+}
+
+@media (max-width: 991px) {
+    .contact-section {
+        padding-bottom: 820px;
+    }
+
+    .contact-right .map {
+        margin-top: 90px;
+        width: 680px;
+        height: 500px;
+    }
+
+    .contact-left {
+        padding-right: 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-right .map {
+        margin-top: 80px;
+        width: 530px;
+        height: 450px;
+    }
+
+    .contact-section {
+        padding-bottom: 760px;
+    }
+}
+
+@media (max-width: 575px) {
+    .contact-right .map {
+        margin-top: 80px;
+        width: 450px;
+        height: 400px;
+    }
+
+    .contact-section {
+        padding-top: 70px;
+        padding-bottom: 700px;
+    }
+
+    .contact-left h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 470px) {
+    .contact-form button {
+        font-size: 12px;
+        padding: 20px 40px;
+    }
+
+    .contact-right .map {
+        width: 360px;
+        height: 380px;
+    }
+
+    .contact-section {
+        padding-top: 70px;
+        padding-bottom: 700px;
+    }
+
+    .contact-left h2 {
+        font-size: 30px;
+    }
+
+    .contact-form .input-div {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .contact-right .map {
+        width: 310px;
+        height: 350px;
+    }
+
+    .contact-section {
+        padding-bottom: 530px;
+    }
+}

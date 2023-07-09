@@ -1,0 +1,231 @@
+.cost-section {
+    padding-top: 70px;
+    padding-bottom: 170px;
+}
+
+.cost-top {
+    text-align: center;
+    padding-bottom: 18px;
+}
+
+.cost-top .cost-logo img {
+    padding-bottom: 10px;
+}
+
+.cost-top .cost-title h2 {
+    color: var(--primary-color);
+    font-size: 45px;
+    font-family: var(--font-cormorant);
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+.cost-top .cost-title p {
+    color: #848b8a;
+    font-family: var(--font-rubik);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.cost-card .cost-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.cost-card .cost-img div {
+    position: absolute;
+    top: 30px;
+    right: -75px;
+    width: 250px;
+    font-family: var(--font-rubik);
+    transform: rotate(45deg);
+    text-align: center;
+    padding: 10px 0px;
+    background-color: var(--primary-bg-color);
+}
+
+.cost-card .cost-img img {
+    border-bottom: 18px solid white;
+    width: 100%;
+}
+
+.cost-card .cost-content {
+    position: relative;
+}
+
+.cost-content .cost-price {
+    position: absolute;
+    top: -25%;
+    left: 32.5%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--section-bg);
+    border: 10px solid var(--heading-color);
+    border-radius: 50%;
+}
+
+.cost-price h5 {
+    font-family: var(--font-rubik);
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.cost-price p {
+    font-family: var(--font-rubik);
+    color: #848b8a;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+.cost-content .cost-desc {
+    padding-top: 75px;
+    text-align: center;
+    background-color: #fbf7f3;
+}
+
+.cost-content .cost-desc h3 {
+    font-size: 36px;
+    font-family: var(--font-cormorant);
+    font-weight: bold;
+    color: var(--primary-color);
+    padding-bottom: 20px;
+}
+
+.cost-content .cost-desc p {
+    font-size: 16px;
+    font-family: var(--font-rubik);
+    color: #848b8a;
+    padding: 0px 45px;
+}
+
+.cost-content .cost-desc .line {
+    display: block;
+    margin: 28px auto;
+    width: 120px;
+    height: 2px;
+    background: linear-gradient(to left, #eae6e2 0%, #d7d3cf 20%, #d7d3cf 70%, #eae6e2 100%);
+}
+
+.cost-content .cost-desc button {
+    color: var(--section-bg);
+    background-color: var(--primary-bg-color);
+    font-family: var(--font-rubik);
+    transition: all .4s ease-in-out;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 22px 50px;
+    border-radius: 3px 42px 42px;
+    margin-top: 10px;
+    margin-bottom: -25px;
+}
+
+.cost-content button:hover {
+    color: var(--section-bg);
+    background-color: var(--heading-color);
+}
+
+.cost-content button.middle {
+    color: var(--section-bg);
+    background-color: var(--heading-color);
+}
+
+.cost-content button.middle:hover {
+    color: var(--section-bg);
+    background-color: var(--primary-bg-color);
+}
+
+@media (max-width: 991px) {
+    .cost-top .cost-title h2 {
+        font-size: 35px;
+    }
+
+    .cost-top .cost-title p {
+        font-size: 13px;
+    }
+
+    .cost-card {
+        margin-bottom: 60px;
+    }
+
+    .cost-section {
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .cost-content .cost-desc h3 {
+        font-size: 30px;
+    }
+
+    .cost-content .cost-desc p {
+        font-size: 15px;
+        padding: 0px 30px;
+    }
+
+    .cost-content .cost-price {
+        left: 36%;
+        width: 140px;
+        height: 140px;
+    }
+
+    .cost-price h5 {
+        font-size: 30px;
+    }
+
+    .cost-price p {
+        font-size: 13px;
+    }
+
+    .cost-content .cost-desc {
+        padding-top: 65px;
+    }
+
+    .cost-content .cost-desc .line {
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .cost-top .cost-title h2 {
+        font-size: 26px;
+    }
+
+    .cost-content .cost-desc button {
+        font-size: 11px;
+        padding: 20px 38px;
+    }
+
+    .cost-content .cost-price {
+        left: 34.5%;
+    }
+    .cost-content .cost-desc p {
+        font-size: 15px;
+        padding: 0px 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .cost-top .cost-title h2 {
+        font-size: 24px;
+    }
+
+    .cost-content .cost-price {
+        left: 34%;
+        width: 140px;
+        height: 140px;
+    }
+    .cost-content .cost-desc .line {
+        margin: 15px auto;
+    }
+}
