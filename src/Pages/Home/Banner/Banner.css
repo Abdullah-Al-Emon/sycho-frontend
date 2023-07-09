@@ -1,6 +1,6 @@
 .banner-section {
     padding-top: 170px;
-    padding-bottom: 160px;
+    padding-bottom: 170px;
 }
 
 .banner-left h4 {
@@ -118,6 +118,10 @@
         line-height: 90px;
         padding-bottom: 40px;
     }
+    .banner-section {
+        padding-top: 170px;
+        padding-bottom: 200px;
+    }
 }
 
 @media (max-width:1240px) {
@@ -130,6 +134,11 @@
         font-size: 75px;
         line-height: 80px;
         padding-bottom: 33px;
+    }
+
+    .banner-section {
+        padding-top: 170px;
+        padding-bottom: 170px;
     }
 }
 

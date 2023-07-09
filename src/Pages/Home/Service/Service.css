@@ -186,6 +186,9 @@
     .service-top .service-title h2 {
         font-size: 26px;
     }
+    .service-section {
+        padding-bottom: 20px;
+    }
 }
 
 @media (max-width: 380px) {

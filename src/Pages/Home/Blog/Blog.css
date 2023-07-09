@@ -168,4 +168,31 @@
         padding-bottom: 20px;
         width: 310px;
     }
+    .blog-top .blog-title h2 {
+        font-size: 38px;
+    }
+    .blog-top .blog-title p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:767px) {
+    .blog-top .blog-title h2 {
+        font-size: 34px;
+    }
+}
+@media (max-width:575px) {
+    .blog-top .blog-title h2 {
+        font-size: 32px;
+    }
+}
+@media (max-width:470px) {
+    .blog-top .blog-title h2 {
+        font-size: 27px;
+    }
+}
+@media (max-width:400px) {
+    .blog-top .blog-title h2 {
+        font-size: 24px;
+    }
 }

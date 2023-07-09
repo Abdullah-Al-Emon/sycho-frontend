@@ -229,3 +229,8 @@
         margin: 15px auto;
     }
 }
+@media (max-width: 380px) {
+    .cost-content .cost-price {
+        left: 29%;
+    }
+}
