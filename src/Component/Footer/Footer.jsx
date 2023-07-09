@@ -34,6 +34,9 @@ const Footer = () => {
         items: 4
       },
       1300: {
+        items: 4
+      },
+      1400:{
         items: 5
       }
     }

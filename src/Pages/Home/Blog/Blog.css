@@ -30,7 +30,7 @@
 }
 
 .blog-card {
-    width: 350px;
+    width: 335px;
 }
 
 .blog-card .blog-img img {
@@ -133,7 +133,7 @@
         width: 280px;
     }
     .blog-desc h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
     .bottom-icon-div div img {
         height: 16px;
@@ -162,10 +162,16 @@
     }
 }
 
+@media (max-width: 1010px) {
+    .blog-card{
+        width: 328px;
+    }
+}
+
 @media (max-width:991px) {
     .blog-card {
         margin: auto;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
         width: 310px;
     }
     .blog-top .blog-title h2 {
