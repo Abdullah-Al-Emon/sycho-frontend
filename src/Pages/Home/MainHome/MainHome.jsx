@@ -10,9 +10,9 @@ import Appointment from '../Appointment/Appointment';
 import Case from '../Case/Case';
 import Client from '../Client/Client';
 import Cost from '../Cost/Cost';
-import Contact from '../Contact/contact';
+import Contact from '../Contact/Contact';
 import Testimonial from '../Testimonial/Testimonial';
-import Blog from '../Blog/blog';
+import Blog from '../Blog/Blog';
 
 const MainHome = () => {
   const options = {

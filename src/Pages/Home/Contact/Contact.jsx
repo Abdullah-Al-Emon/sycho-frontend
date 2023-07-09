@@ -1,5 +1,5 @@
 import React from 'react';
-import './contact.css';
+import './Contact.css';
 import logo from '../../../assets/image/logo-icon.png';
 
 const Contact = () => {
