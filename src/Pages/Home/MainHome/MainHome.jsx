@@ -8,11 +8,11 @@ import About from '../About/About';
 import Service from '../Service/Service';
 import Appointment from '../Appointment/Appointment';
 import Case from '../Case/Case';
-import Client from '../Client/Client';
+import Client from '../Client/client';
 import Cost from '../Cost/Cost';
-import Contact from '../Contact/Contact';
+import Contact from '../Contact/contact';
 import Testimonial from '../Testimonial/Testimonial';
-import Blog from '../Blog/Blog';
+import Blog from '../Blog/blog';
 
 const MainHome = () => {
   const options = {

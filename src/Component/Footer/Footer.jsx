@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css'
+import './footer.css'
 import b1_img from '../../assets/image/brand-1.png';
 import b2_img from '../../assets/image/brand-2.png';
 import b3_img from '../../assets/image/brand-3.png';

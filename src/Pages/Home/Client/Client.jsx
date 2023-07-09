@@ -1,5 +1,5 @@
 import React from 'react';
-import './Client.css';
+import './client.css';
 import OwlCarousel from 'react-owl-carousel2';
 import c1_img from '../../../assets/image/client1-img.png';
 import c2_img from '../../../assets/image/client2-img.png';

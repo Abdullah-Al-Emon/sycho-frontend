@@ -1,5 +1,5 @@
 import React from 'react';
-import './Blog.css';
+import './blog.css';
 import logo from '../../../assets/image/logo-icon.png';
 import b1_icon from '../../../assets/image/b1-icon.png';
 import b2_icon from '../../../assets/image/b2-icon.png';
