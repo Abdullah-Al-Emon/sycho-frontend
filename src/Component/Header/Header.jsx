@@ -4,10 +4,129 @@ import logo from '../../assets/image/logo.png';
 import msg from '../../assets/image/sycho-psd.png';
 import { Icon } from '@iconify/react';
 
+const menu = [
+  {
+    name: 'home',
+    isActive: false,
+    id: 1,
+    subMenu: [
+      {
+        id: 1,
+        name: 'home1',
+        isActive: false,
+      },
+      {
+        id: 2,
+        name: 'home2',
+        isActive: false,
+      },
+      {
+        id: 3,
+        name: 'home3',
+        isActive: false,
+      },
+    ]
+  },
+  {
+    name: 'pages',
+    isActive: false,
+    id: 2,
+    subMenu: [
+      {
+        id: 1,
+        name: 'page1',
+        isActive: false,
+      },
+      {
+        id: 2,
+        name: 'page2',
+        isActive: false,
+      },
+      {
+        id: 3,
+        name: 'page3',
+        isActive: false,
+      },
+    ]
+  },
+  {
+    name: 'services',
+    isActive: false,
+    id: 3,
+    subMenu: [
+      {
+        id: 1,
+        name: 'service1',
+        isActive: false,
+      },
+      {
+        id: 2,
+        name: 'service2',
+        isActive: false,
+      },
+      {
+        id: 3,
+        name: 'service3',
+        isActive: false,
+      },
+    ]
+  },
+  {
+    name: 'case',
+    isActive: false,
+    id: 4,
+    subMenu: [
+      {
+        id: 1,
+        name: 'case1',
+        isActive: false,
+      },
+      {
+        id: 2,
+        name: 'case2',
+        isActive: false,
+      },
+      {
+        id: 3,
+        name: 'case3',
+        isActive: false,
+      },
+    ]
+  },
+  {
+    name: 'article',
+    isActive: false,
+    id: 5,
+    subMenu: [
+      {
+        id: 1,
+        name: 'article1',
+        isActive: false,
+      },
+      {
+        id: 2,
+        name: 'article2',
+        isActive: false,
+      },
+      {
+        id: 3,
+        name: 'article3',
+        isActive: false,
+      },
+    ]
+  },
+  {
+    name: 'Contact',
+    isActive: false,
+    id: 6
+  },
+]
 const Header = () => {
   const [sticky, setSticky] = useState('');
+  const [menus, setMenus] = useState([...menu])
   const [sideBar, setSideBar] = useState(false);
-  const [menuBar, setMenuBar] = useState(false)
+  const [menuBar, setMenuBar] = useState(false);
+  const [open, setOpen] = useState(false)
 
   const handleSideBar = () => {
     setSideBar(!sideBar)
@@ -16,6 +135,8 @@ const Header = () => {
   const handleMenuBar = () => {
     setMenuBar(!menuBar)
   }
+
+
 
   useEffect(() => {
     const headerSticky = () => {
@@ -27,16 +148,33 @@ const Header = () => {
     };
     window.addEventListener('scroll', headerSticky);
   }, []);
+
+
+
+  const handleAddedMenu = (id) => {
+    setOpen(!open)
+    const findItem = menu.findIndex((item) => item.id === id)
+    setMenus((prev) => {
+      prev[findItem] = {
+        ...prev[findItem],
+        isActive: open
+      }
+      return prev
+    })
+    console.log(menus)
+  }
   return (
-    <div className="header">
+    <>
       <div className={`header-section ${sticky}`}>
         <div className="container">
           <div className="row">
-            <div className="col-lg-8 col-6">
+            <div className="col-lg-2 col-6">
+              <div className="header-logo">
+                <img src={logo} alt="" />
+              </div>
+            </div>
+            <div className="col-lg-7 d-none d-lg-block">
               <div className="header-left">
-                <div className="header-logo">
-                  <img src={logo} alt="" />
-                </div>
                 <div className="header-menu">
                   <ul>
                     <li className='fast'>
@@ -116,11 +254,11 @@ const Header = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-6">
+            <div className="col-lg-3 col-6">
               <div className="header-right">
                 <span><Icon height={30} icon="ph:phone-call-thin" /></span>
                 <p className='p-number'><a href="#">+1 (202) 588-6500</a></p>
-                <span onClick={handleMenuBar} className='mobile-menu-icon'><Icon height={32} icon="ep:menu" /></span>
+                <span onClick={handleMenuBar} className='mobile-menu-icon'><Icon height={32} icon="ri:menu-2-fill" /></span>
                 <span onClick={handleSideBar} className='sidebar-menu'><Icon height={28} icon="ri:menu-2-fill" /></span>
               </div>
             </div>
@@ -136,7 +274,34 @@ const Header = () => {
           </div>
           <div className="header-menu">
             <ul>
-              <li className='m-li'>
+              {
+                menus.map(item => (
+                  <li onClick={() => handleAddedMenu(item.id)} className='m-li'>
+                    <a className='link' href="#">{item.name}+
+                      {
+                        item.subMenu && (
+                          <span><Icon height={22} icon="icon-park-outline:down" /></span>
+                        )}
+                    </a>
+                    {
+                      item.subMenu && (
+                        <ul className={item.isActive ? 'active' : ''}>
+                          {
+                            item.subMenu.map(submenu => (
+                              <li >
+                                <a href="#">{submenu.name}</a>
+                              </li>
+                            ))
+                          }
+                        </ul>
+                      )
+                    }
+
+
+                  </li>
+                ))
+              }
+              {/* <li className='m-li'>
                 <a className='link' href="#">Home+
                   <span><Icon height={22} icon="icon-park-outline:down" /></span>
                 </a>
@@ -218,7 +383,7 @@ const Header = () => {
               </li>
               <li className='m-li'>
                 <a className='link' href="#">Contact</a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
@@ -258,7 +423,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

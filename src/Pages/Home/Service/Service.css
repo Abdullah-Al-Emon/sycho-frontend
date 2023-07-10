@@ -1,57 +1,30 @@
-.service-section{
+.service-section {
     padding-bottom: 50px;
 }
 
-.service-top{
-    text-align: center;
-    padding-bottom: 18px;
-}
-
-.service-top .service-logo img{
-    padding-bottom: 10px;
-}
-
-.service-top .service-title h2{
-    color: var(--primary-color);
-    font-size: 45px;
-    font-family: var(--font-cormorant);
-    font-weight: bold;
-    text-transform: capitalize;
-    padding-bottom: 10px;
-}
-
-.service-top .service-title p{
-    color: #848b8a;
-    font-family: var(--font-rubik);
-    font-size: 14px;
-    text-transform: uppercase;
-    padding-bottom: 20px;
-}
-
-.service-card{
+.service-card {
     position: relative;
     margin-bottom: 40px;
     cursor: pointer;
-    width: 320px;
 }
 
-.service-card:hover .service-title{
+.service-card:hover .service-title {
     visibility: hidden;
 }
 
-.service-card:hover .hidden-desc{
+.service-card:hover .hidden-desc {
     visibility: visible;
     opacity: 0.9;
-    right: 0;
-    top: 0;
+    right: -10px;
+    top: -9px;
 }
 
 
-.hidden-desc{
+.hidden-desc {
     visibility: hidden;
     position: absolute;
-    right: -20%;
-    top: -20%;
+    right: 10px;
+    top: 20px;
     max-width: 100%;
     height: 100%;
     opacity: 0;
@@ -65,7 +38,7 @@
     transition: all .6s ease-in-out;
 }
 
-.hidden-desc h4{
+.hidden-desc h4 {
     font-size: 27px;
     font-family: var(--font-cormorant);
     font-weight: bold;
@@ -73,12 +46,12 @@
     padding-bottom: 20px;
 }
 
-.hidden-desc p{
+.hidden-desc p {
     padding: 0px 40px;
     padding-bottom: 30px;
 }
 
-.hidden-desc button{
+.hidden-desc button {
     color: var(--primary-bg-color);
     background-color: var(--section-bg);
     font-family: var(--font-rubik);
@@ -96,7 +69,7 @@
     background-color: var(--primary-bg-color);
 }
 
-.service-card .service-title{
+.service-card .service-title {
     display: block;
     transition: all .3s ease-in-out;
     position: absolute;
@@ -104,26 +77,30 @@
     width: 100%;
 }
 
-.service-card img{
+.service-card img {
     max-width: 100%;
 }
 
-.service-card .service-title p{
-    display: inline-block;
+.service-card .service-title p {
+    display: flex;
+    align-items: center;
     font-size: 25px;
     font-family: var(--font-cormorant);
     font-weight: bold;
     padding: 15px 18px;
-    width: 255px;
+    width: calc(100% - 70px);
+    height: 70px;
     background: var(--primary-bg-color);
+    float: left;
 }
 
-.service-card .service-title .icon{
-    display: inline-block;
-    text-align: center;
+.service-card .service-title .icon {
+    display: flex;
+    align-items: center;
     background-color: var(--heading-color);
     padding: 15px 18px;
-    width: 65px;
+    width: 70px;
+    height: 70px;
 }
 
 .service-section .col-lg-4 {
@@ -131,40 +108,9 @@
     justify-content: center;
 }
 
-@media (max-width:1200px) {
-    .service-card .service-title .icon {
-        padding: 15px 13px;
-        width: 61px;
-    }
-    .service-card .service-title p {
-        font-size: 23px;
-        padding: 15px 18px;
-        width: 235px;
-    }
-}
-
-@media (max-width: 1200px) {
-    .service-card {
-        width: 255px;
-    }
-    .service-card .service-title p {
-        font-size: 21px;
-        width: 205px;
-    }
-    .service-card .service-title .icon {
-        width: 50px;
-    }
-}
-
 @media (max-width: 991px) {
     .service-card .service-title p {
-        font-size: 20px;
-    }
-    .service-top .service-title h2 {
-        font-size: 35px;
-    }
-    .service-top .service-title p {
-        font-size: 13px;
+        font-size: 23px;
     }
 }
 
@@ -173,51 +119,61 @@
         display: flex;
         justify-content: center;
     }
+    .service-card .service-title p {
+        width: calc(100% - 62px);
+    }
+    .service-card .service-title .icon {
+        width: 62px;
+    }
     .hidden-desc button {
         padding: 18px 40px;
         font-size: 12px;
     }
+
     .hidden-desc p {
         font-size: 14px;
+    }
+    .service-card .service-title p {
+        font-size: 18px;
     }
 }
 
 @media (max-width:575px) {
-    .service-top .service-title h2 {
+    .title h2 {
         font-size: 26px;
     }
+
     .service-section {
         padding-bottom: 20px;
+    }
+    .service-card .service-title p {
+        font-size: 20px;
     }
 }
 
 @media (max-width: 380px) {
-    .service-top .service-title h2 {
-        font-size: 24px;
-    }
-    .service-card{
-        width: 230px;
-    }
+
     .service-card .service-title p {
         padding: 15px 15px;
-        font-size: 18px;
-        width: 180px;
+        font-size: 20px;
+        width: calc(100% - 65px);
     }
+
     .service-card .service-title .icon {
-        width: 50px;
+        width: 65px;
     }
-    .service-card .service-title .icon svg{
-        height: 24px;
-    }
+
     .hidden-desc h4 {
         font-size: 24px;
         padding-bottom: 12px;
     }
+
     .hidden-desc p {
         font-size: 13px;
         padding: 0px 20px;
         padding-bottom: 30px;
     }
+
     .hidden-desc button {
         padding: 16px 30px;
         font-size: 11px;

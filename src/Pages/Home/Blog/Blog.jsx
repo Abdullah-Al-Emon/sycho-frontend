@@ -7,18 +7,18 @@ import b3_icon from '../../../assets/image/b3-icon.png';
 import b1_img from '../../../assets/image/b1-img.png';
 import b2_img from '../../../assets/image/b2-img.png';
 import b3_img from '../../../assets/image/b3-img.png';
+import SectionHeading from '../../../Component/SectionHeading/SectionHeading';
 
 const Blog = () => {
     return (
         <div className='blog-section'>
             <div className="container">
-                <div className="blog-top">
-                    <div className='blog-logo'><img src={logo} alt="" /></div>
-                    <div className="blog-title">
-                        <h2>Professional Psychology Therapy <br /> Service You Can Choose</h2>
-                        <p>Popular Articles</p>
-                    </div>
-                </div>
+                <SectionHeading
+                    fastLine='Professional Psychology Therapy'
+                    secondLine='Service You Can Choose'
+                    text='affordable Services'
+                    SectionHeading1={true}
+                />
                 <div className="row">
                     <div className="col-lg-4 col-md-6">
                         <div className="blog-card">

@@ -4,18 +4,18 @@ import logo from '../../../assets/image/logo-icon.png';
 import c1_img from '../../../assets/image/cost1-img.png';
 import c2_img from '../../../assets/image/cost2-img.png';
 import c3_img from '../../../assets/image/cost3-img.png';
+import SectionHeading from '../../../Component/SectionHeading/SectionHeading';
 
 const Cost = () => {
     return (
         <div className='cost-section'>
             <div className="container">
-                <div className="cost-top">
-                    <div className='cost-logo'><img src={logo} alt="" /></div>
-                    <div className="cost-title">
-                        <h2>Professional Psychology Therapy <br /> Service You Can Choose</h2>
-                        <p>affordable Services</p>
-                    </div>
-                </div>
+                <SectionHeading
+                    fastLine='Professional Psychology Therapy'
+                    secondLine='Service You Can Choose'
+                    text='affordable Services'
+                    SectionHeading1={true}
+                />
                 <div className="row">
                     <div className="col-lg-4 col-md-6">
                         <div className="cost-card">

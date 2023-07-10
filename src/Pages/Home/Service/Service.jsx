@@ -8,20 +8,20 @@ import s4_img from '../../../assets/image/s4-card.png';
 import s5_img from '../../../assets/image/s5-card.png';
 import s6_img from '../../../assets/image/s6-card.png';
 import { Icon } from '@iconify/react';
+import SectionHeading from '../../../Component/SectionHeading/SectionHeading';
 
 const Service = () => {
     return (
         <div className='service-section'>
             <div className="container">
-                <div className="service-top">
-                    <div className='service-logo'><img src={logo} alt="" /></div>
-                    <div className="service-title">
-                        <h2>Professional Psychology Therapy <br /> Service You Can Choose</h2>
-                        <p>affordable Services</p>
-                    </div>
-                </div>
+                <SectionHeading
+                    fastLine='Professional Psychology Therapy'
+                    secondLine='Service You Can Choose'
+                    text='affordable Services'
+                    SectionHeading1={true}
+                />
                 <div className="row">
-                    <div className="col-lg-4 col-md-6 col-12">
+                    <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div className="service-card">
                             <img src={s1_img} alt="" />
                             <div className='service-title'>
@@ -35,7 +35,7 @@ const Service = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 col-12">
+                    <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div className="service-card">
                             <img src={s2_img} alt="" />
                             <div className='service-title'>
@@ -49,7 +49,7 @@ const Service = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 col-12">
+                    <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div className="service-card">
                             <img src={s3_img} alt="" />
                             <div className='service-title'>
@@ -63,7 +63,7 @@ const Service = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 col-12">
+                    <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div className="service-card">
                             <img src={s4_img} alt="" />
                             <div className='service-title'>
@@ -77,7 +77,7 @@ const Service = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 col-12">
+                    <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div className="service-card">
                             <img src={s5_img} alt="" />
                             <div className='service-title'>
@@ -91,7 +91,7 @@ const Service = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6 col-12">
+                    <div className="col-lg-4 col-md-6 col-sm-6 col-12">
                         <div className="service-card">
                             <img src={s6_img} alt="" />
                             <div className='service-title'>

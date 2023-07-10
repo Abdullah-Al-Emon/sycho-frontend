@@ -43,10 +43,6 @@
     margin-top: -407px;
 }
 
-.testimonial-card {
-    width: 320px !important;
-}
-
 .testimonial-card .testimonial-top {
     padding: 33px 33px;
     background-color: var(--section-bg);
@@ -196,10 +192,6 @@
         margin-top: -382px;
     }
 
-    .testimonial-card {
-        width: 290px !important;
-    }
-
     .testimonial-card .testimonial-top {
         padding: 19px 19px;
     }
@@ -207,10 +199,6 @@
 }
 
 @media (max-width: 1200px) {
-    .testimonial-card {
-        margin: auto;
-        width: 230px !important;
-    }
 
     .testimonial-top .testimonial-desc {
         padding-top: 13px;
@@ -290,11 +278,6 @@
     .testimonial {
         padding-top: 60px;
         padding-bottom: 320px;
-    }
-
-    .testimonial-card {
-        margin: auto;
-        width: 200px !important;
     }
 
     .testimonial-top .testimonial-desc {

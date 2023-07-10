@@ -10,7 +10,7 @@ const Case = () => {
     const options = {
         dots: false,
         loop: true,
-        rewind: true,
+        rewind: false,
         margin: 10,
         nav: true,
         autoplay: true,

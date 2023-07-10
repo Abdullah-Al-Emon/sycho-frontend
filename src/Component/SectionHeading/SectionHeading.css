@@ -1,0 +1,52 @@
+.section-title-top {
+    text-align: center;
+    padding-bottom: 18px;
+}
+
+.section-title-logo img {
+    padding-bottom: 10px;
+}
+
+.section-title h2 {
+    color: var(--primary-color);
+    font-size: 45px;
+    font-family: var(--font-cormorant);
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+.section-title p {
+    color: #848b8a;
+    font-family: var(--font-rubik);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 991px) {
+
+    .section-title h2 {
+        font-size: 35px;
+    }
+
+    .section-title p {
+        font-size: 13px;
+    }
+}
+@media (max-width:575px) {
+    .section-title h2 {
+        font-size: 26px;
+    }
+}
+@media (max-width: 380px) {
+    .section-title h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 350px) {
+    .section-title h2 {
+        font-size: 20px;
+    }
+}

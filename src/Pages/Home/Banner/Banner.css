@@ -1,5 +1,5 @@
 .banner-section {
-    padding-top: 170px;
+    padding-top: 190px;
     padding-bottom: 205px;
 }
 
@@ -119,7 +119,7 @@
         padding-bottom: 40px;
     }
     .banner-section {
-        padding-top: 170px;
+        padding-top: 190px;
         padding-bottom: 200px;
     }
 }
@@ -137,7 +137,7 @@
     }
 
     .banner-section {
-        padding-top: 170px;
+        padding-top: 190px;
         padding-bottom: 170px;
     }
 }
@@ -157,7 +157,7 @@
 @media (max-width: 991px) {
     .banner-section {
         padding-top: 160px;
-        padding-bottom: 530px;
+        padding-bottom: 140px;
     }
     .banner-left{
         padding-bottom: 80px;
@@ -168,8 +168,9 @@
         padding-bottom: 25px;
     }
     .banner-right img {
-        width: 645px !important;
+        width: 100% !important;
         height: 400px;
+        position: relative;
     }
 }
 
@@ -182,17 +183,17 @@
     .button {
         padding: 20px 42px;
     }
-    .banner-right img {
+    /* .banner-right img {
         width: 535px !important;
         height: 350px;
-    }
+    } */
     .banner-left{
         padding-bottom: 50px;
     }
-    .banner-section {
+    /* .banner-section {
         padding-top: 140px;
         padding-bottom: 490px;
-    }
+    } */
 }
 
 @media (max-width:575px) {
@@ -200,24 +201,24 @@
         font-size: 50px;
         line-height: 55px;
     }
-    .banner-section {
+    /* .banner-section {
         padding-top: 140px;
         padding-bottom: 420px;
-    }
-    .banner-right img {
+    } */
+    /* .banner-right img {
         width: 460px !important;
         height: 300px;
-    }
+    } */
     .button {
         padding: 18px 38px;
     }
 }
 
 @media (max-width: 500px) {
-    .banner-right img {
+    /* .banner-right img {
         width: 375px !important;
         height: 275px;
-    }
+    } */
     .banner-left h2 {
         font-size: 45px;
         line-height: 55px;
@@ -225,9 +226,9 @@
     .button {
         padding: 16px 34px;
     }
-    .banner-section {
+    /* .banner-section {
         padding-bottom: 390px;
-    }
+    } */
 }
 
 @media (max-width: 410px) {
@@ -235,11 +236,11 @@
         font-size: 40px;
         line-height: 50px;
     }
-    .banner-right img {
+    /* .banner-right img {
         width: 315px !important;
         height: 245px;
-    }
-    .banner-section {
+    } */
+    /* .banner-section {
         padding-bottom: 350px;
-    }
+    } */
 }
