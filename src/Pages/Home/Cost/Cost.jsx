@@ -5,6 +5,7 @@ import c1_img from '../../../assets/image/cost1-img.png';
 import c2_img from '../../../assets/image/cost2-img.png';
 import c3_img from '../../../assets/image/cost3-img.png';
 import SectionHeading from '../../../Component/SectionHeading/SectionHeading';
+import Button from '../../../Component/Button/Button';
 
 const Cost = () => {
     return (
@@ -14,10 +15,9 @@ const Cost = () => {
                     fastLine='Professional Psychology Therapy'
                     secondLine='Service You Can Choose'
                     text='affordable Services'
-                    SectionHeading1={true}
                 />
                 <div className="row">
-                    <div className="col-lg-4 col-md-6">
+                    <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="cost-card">
                             <div className="cost-img">
                                 <img src={c1_img} alt="" />
@@ -33,12 +33,12 @@ const Cost = () => {
                                     <span className='line'></span>
                                     <p>Firmament waters woell air face cattle fish toll make itself the.</p>
                                     <span className='line'></span>
-                                    <button>Get Started Now</button>
+                                    <Button buttontext={'Get Started Now'} />
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6">
+                    <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="cost-card">
                             <div className="cost-img">
                                 <img src={c2_img} alt="" />
@@ -55,12 +55,14 @@ const Cost = () => {
                                     <span className='line'></span>
                                     <p>Firmament waters woell air face cattle fish toll make itself the.</p>
                                     <span className='line'></span>
-                                    <button className='middle'>Get Started Now</button>
+                                    <div className="middle">
+                                        <Button buttontext={'Get Started Now'} />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 col-md-6">
+                    <div className="col-lg-4 col-md-6 col-sm-6">
                         <div className="cost-card">
                             <div className="cost-img">
                                 <img src={c3_img} alt="" />
@@ -76,7 +78,7 @@ const Cost = () => {
                                     <span className='line'></span>
                                     <p>Firmament waters woell air face cattle fish toll make itself the.</p>
                                     <span className='line'></span>
-                                    <button>Get Started Now</button>
+                                    <Button buttontext={'Get Started Now'} />
                                 </div>
                             </div>
                         </div>

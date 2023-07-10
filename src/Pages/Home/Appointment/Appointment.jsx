@@ -3,6 +3,8 @@ import './Appointment.css';
 import dc_img from '../../../assets/image/doctor-img.png';
 import signature_img from '../../../assets/image/signature.png';
 import logo from '../../../assets/image/logo-icon.png';
+import SectionHeading from '../../../Component/SectionHeading/SectionHeading';
+import Button from '../../../Component/Button/Button';
 
 const Appointment = () => {
     return (
@@ -21,7 +23,7 @@ const Appointment = () => {
                                 <h5>Psychotherapist, Medinova Hospital in California</h5>
                                 <p>Viverra pede suscipit dapibus litora mus nascetur nec molestie laoreet volutpat egete vul putate. Donec facilisi pede metus. Sapien risus, eleifend ornare adipiscing senectus soci osqu. Scelerisque felis convallis vel cras vel nisl dignissim quis phasellus eleifend potenti oictumst mi nisi semper penatibus maecenas lorem tortor a parturient rhoncus quis pose uere evelum the meaning quam ac.</p>
                                 <div className="doctor-button">
-                                    <button>Get Appointment</button>
+                                    <Button buttontext={'Get Appointment'} />
                                     <div>
                                         <img src={signature_img} alt="" />
                                     </div>
@@ -47,11 +49,12 @@ const Appointment = () => {
                         </div>
                         <div className="col-md-7 p-0">
                             <div className="appointment-right">
-                                <div className='logo'>
-                                    <span><img src={logo} alt="" /></span>
-                                    <span>our achievement</span>
-                                </div>
-                                <h2>Healing Through More Than Reality and Games</h2>
+                                <SectionHeading
+                                    fastLine='Healing Through More Than'
+                                    secondLine='Reality and Games'
+                                    textTop='our achievement'
+                                    style2={true}
+                                />
                                 <div className='all-count'>
                                     <div className='customer-count'>
                                         <div className='single-count'>

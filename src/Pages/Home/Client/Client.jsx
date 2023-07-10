@@ -15,20 +15,21 @@ const Client = () => {
         margin: 10,
         nav: false,
         autoplay: true,
+        center: true,
         responsive: {
             0: {
-                items: 1
-            },
-            500: {
                 items: 2
             },
-            670:{
+            400: {
                 items: 3
             },
-            991: {
+            556:{
+                items:4
+            },
+            834:{
                 items: 4
             },
-            1150:{
+            835:{
                 items: 5
             }
         }

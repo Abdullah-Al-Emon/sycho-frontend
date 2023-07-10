@@ -12,15 +12,6 @@
     padding-bottom: 10px;
 }
 
-.blog-top .blog-title h2 {
-    color: var(--primary-color);
-    font-size: 45px;
-    font-family: var(--font-cormorant);
-    font-weight: bold;
-    text-transform: capitalize;
-    padding-bottom: 10px;
-}
-
 .blog-top .blog-title p {
     color: #848b8a;
     font-family: var(--font-rubik);
@@ -29,13 +20,7 @@
     padding-bottom: 20px;
 }
 
-.blog-card {
-    width: 335px;
-}
 
-.blog-card .blog-img img {
-    width: 400px;
-}
 
 .blog-card .blog-desc {
     margin-top: -80px;
@@ -43,6 +28,11 @@
     background-color: #fbf7f3;
     border-radius: 0px 0px 20px 0px;
     position: relative;
+    width: 90%;
+}
+
+.blog-card .blog-img img {
+    width: 100%;
 }
 
 .blog-desc .blog-date {
@@ -109,7 +99,7 @@
 }
 
 .bottom-icon-div div span {
-    font-size: 16px;
+    font-size: 15px;
     font-family: var(--font-rubik);
 }
 
@@ -118,53 +108,43 @@
     width: 20px;
 }
 
-@media (max-width: 1399px) {
-    .blog-card .blog-img img {
-        width: 360px;
-    }
-}
-
 @media (max-width:1200px) {
-    .blog-card .blog-img img {
-        width: 310px;
-    }
 
-    .blog-card .blog-desc {
-        width: 280px;
-    }
+
     .blog-desc h3 {
         font-size: 18px;
     }
+
     .bottom-icon-div div img {
         height: 16px;
         width: 16px;
     }
+
     .bottom-icon-div div span {
         font-size: 13px;
         font-family: var(--font-rubik);
     }
+
     .top-icon-div img {
         height: 16px;
         width: 16px;
     }
+
     .top-icon-div span {
         font-size: 14px;
         font-family: var(--font-rubik);
     }
+
     .blog-date .date {
         font-size: 22px;
     }
+
     .blog-date .month {
         font-size: 13px;
     }
+
     .blog-desc .bottom-icon-div div {
         gap: 5px;
-    }
-}
-
-@media (max-width: 1010px) {
-    .blog-card{
-        width: 328px;
     }
 }
 
@@ -172,33 +152,89 @@
     .blog-card {
         margin: auto;
         padding-bottom: 30px;
-        width: 310px;
     }
-    .blog-top .blog-title h2 {
-        font-size: 38px;
-    }
+
     .blog-top .blog-title p {
         font-size: 13px;
     }
 }
 
-@media (max-width:767px) {
-    .blog-top .blog-title h2 {
-        font-size: 34px;
+@media (max-width: 767px) {
+    .blog-card .blog-desc {
+        padding: 11px 12px;
+    }
+    .blog-desc h3 {
+        font-size: 17px;
+        padding-bottom: 15px;
+    }
+    .bottom-icon-div div img {
+        height: 15px;
+        width: 14px;
+    }
+    .bottom-icon-div div span {
+        font-size: 11px;
+    }
+    .blog-desc .bottom-icon-div div {
+        gap: 3px;
+        padding-bottom: 10px;
+    }
+    .blog-desc .blog-date {
+        padding: 8px 20px;
+    }
+    .blog-date .date {
+        font-size: 18px;
+    }
+    .blog-date .month {
+        font-size: 12px;
     }
 }
-@media (max-width:575px) {
-    .blog-top .blog-title h2 {
-        font-size: 32px;
+@media (max-width: 575px) {
+    .blog-desc h3 {
+        font-size: 22px;
+        padding-bottom: 15px;
+    }
+    .blog-card .blog-desc {
+        padding: 20px 20px;
+    }
+    .blog-desc .bottom-icon-div div {
+        gap: 5px;
+        padding-bottom: 10px;
+    }
+    .bottom-icon-div div img {
+        height: 16px;
+        width: 16px;
+    }
+    .bottom-icon-div div span {
+        font-size: 13px;
     }
 }
-@media (max-width:470px) {
-    .blog-top .blog-title h2 {
-        font-size: 27px;
+
+@media (max-width: 390px) {
+    .blog-card .blog-desc {
+        padding: 11px 12px;
     }
-}
-@media (max-width:400px) {
-    .blog-top .blog-title h2 {
-        font-size: 24px;
+    .blog-desc h3 {
+        font-size: 17px;
+        padding-bottom: 15px;
+    }
+    .bottom-icon-div div img {
+        height: 15px;
+        width: 14px;
+    }
+    .bottom-icon-div div span {
+        font-size: 11px;
+    }
+    .blog-desc .bottom-icon-div div {
+        gap: 3px;
+        padding-bottom: 10px;
+    }
+    .blog-desc .blog-date {
+        padding: 8px 20px;
+    }
+    .blog-date .date {
+        font-size: 18px;
+    }
+    .blog-date .month {
+        font-size: 12px;
     }
 }

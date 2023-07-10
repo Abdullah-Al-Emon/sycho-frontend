@@ -7,6 +7,8 @@ import about_img from '../../../assets/image/about-img.png';
 import logo from '../../../assets/image/logo-icon.png';
 import about_more from '../../../assets/image/about-more.png'
 import { Icon } from '@iconify/react';
+import SectionHeading from '../../../Component/SectionHeading/SectionHeading';
+import Button from '../../../Component/Button/Button';
 
 const About = () => {
   return (
@@ -68,13 +70,13 @@ const About = () => {
             </div>
             <div className="col-lg-6 ">
               <div className="about-bottom-right">
-                <div className="about-title">
-                  <div className='about-content-top'>
-                    <span><img src={logo} alt="" /></span>
-                    <h5>Welcome To Sycho</h5>
-                  </div>
-                  <h2>Proper Physiotherapy From Proper Guided Physiotherapists</h2>
-                </div>
+                <SectionHeading
+                  fastLine='Proper Physiotherapy From Proper'
+                  secondLine='Guided Physiotherapists'
+                  textTop='Welcome to Sycho'
+                  text='affordable Services'
+                  style2={true}
+                />
                 <div className="about-content-middle">
                   <p className='text'>Lorem ipsum dolor sit amet consectetur adipisicing elit sed dole there eiusmod tempor incididub
                     labore  dolore magna aliqua denim ads minim veniam, quis nostrud exerctation to ullamco laibor nisi above murli aliquip commodo usto imperdet quam praesent uten dictum. At diam parturiena
@@ -107,7 +109,7 @@ const About = () => {
                   </div>
                 </div>
                 <div className='about-content-bottom'>
-                  <button>More About Us</button>
+                  <Button buttontext={'More About Us'} />
                   <div className='about-info'>
                     <div><img src={about_more} alt="" /></div>
                     <div>

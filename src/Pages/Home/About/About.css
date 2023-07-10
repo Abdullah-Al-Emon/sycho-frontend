@@ -5,11 +5,11 @@
     background-position: center center;
 }
 
-.about-top{
+.about-top {
     padding-bottom: 300px;
 }
 
-.about-border-bottom{
+.about-border-bottom {
     border-bottom: 1px solid #fff;
 }
 
@@ -21,7 +21,7 @@
     border-right: 1px solid white;
 }
 
-.single-feature-last{
+.single-feature-last {
     border-right: none;
 }
 
@@ -44,22 +44,22 @@
     font-family: var(--font-rubik);
 }
 
-.about-bottom{
+.about-bottom {
     margin-top: -190px;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 
-.about-bottom-left{
+.about-bottom-left {
     position: relative;
 }
 
-.about-bottom-left img{
+.about-bottom-left img {
     max-height: 100%;
     height: 550px;
     max-width: 100%;
 }
 
-.about-left-text{
+.about-left-text {
     background-image: url('../../../assets/image/about-left-text-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -67,7 +67,7 @@
     bottom: 0px;
 }
 
-.about-left-text p{
+.about-left-text p {
     font-size: 25px;
     font-family: var(--font-rubik);
     font-weight: bold;
@@ -76,41 +76,15 @@
     color: var(--primary-color);
 }
 
-.about-content-top{
-    display: flex;
-    align-items: center;
-}
-
-.about-bottom-right{
+.about-bottom-right {
     padding-left: 50px;
 }
 
-.about-content-top{
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding-bottom: 15px;
-}
-
-.about-content-top h5{
-    font-size: 14px;
-    font-family: var(--font-rubik);
-    color: var(--primary-color);
-    text-transform: uppercase;
-}
-
-.about-title{
+.about-bottom-right .style2 {
     padding-bottom: 60px;
 }
 
-.about-title h2{
-    font-size: 42px;
-    font-family: var(--font-cormorant);
-    font-weight: 600;
-    color: var(--primary-color);
-}
-
-.about-content-middle p{
+.about-content-middle p {
     font-size: 15px;
     font-family: var(--font-rubik);
     color: #848b8a;
@@ -118,14 +92,14 @@
     padding-bottom: 25px;
 }
 
-.services{
+.services {
     display: flex;
     align-items: center;
     gap: 15px;
     padding-bottom: 15px;
 }
 
-.services .icon{
+.services .icon {
     background: var(--heading-color);
     border-radius: 50%;
     padding: 3px 2px;
@@ -134,7 +108,7 @@
     justify-content: center;
 }
 
-.services p{
+.services p {
     font-size: 20px;
     font-weight: 600;
     color: var(--primary-color);
@@ -142,45 +116,27 @@
     padding-bottom: 0px;
 }
 
-.about-content-bottom{
+.about-content-bottom {
     display: flex;
     align-items: center;
     gap: 40px;
     padding-top: 20px;
 }
 
-.about-content-bottom button{
-    color: var(--section-bg);
-    background-color: var(--primary-bg-color);
-    font-family: var(--font-rubik);
-    transition: all .4s ease-in-out;
-    text-transform: uppercase;
-    border: none;
-    font-weight: 600;
-    font-size: 13px;
-    padding: 22px 50px;
-    border-radius: 3px 42px 42px;
-}
-
-.about-content-bottom button:hover {
-    color: var(--primary-color);
-    background-color: var(--heading-color);
-}
-
-.about-info{
+.about-info {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.about-info h4{
+.about-info h4 {
     font-size: 22px;
     font-family: var(--font-cormorant);
     font-weight: bold;
     color: var(--primary-color);
 }
 
-.about-info span{
+.about-info span {
     font-size: 16px;
     font-family: var(--font-rubik);
     color: #848b8a;
@@ -192,37 +148,30 @@
     .about-bottom-right {
         padding-left: 30px;
     }
+
     .services {
         gap: 5px;
     }
-    .about-title h2 {
-        font-size: 38px;
-    }    
 }
 
 @media (max-width: 1200px) {
     .single-feature-right p {
         font-size: 14px;
     }
-    .about-title h2 {
-        font-size: 34px;
-    }
+
     .about-top {
         padding-bottom: 265px;
     }
+
     .about-bottom-right {
         padding-left: 10px;
     }
+
     .services p {
         font-size: 18px;
-    }   
-    .about-title {
-        padding-bottom: 65px;
     }
-    .about-content-bottom button {
-        padding: 20px 45px;
-    }
-    .services .icon svg{
+
+    .services .icon svg {
         height: 14px;
     }
 }
@@ -231,9 +180,11 @@
     .about-bottom-right {
         padding-top: 30px;
     }
-    .about-title {
-        padding-bottom: 20px;
+
+    .about-bottom-right .style2 {
+        padding-bottom: -0px;
     }
+
     .single-feature {
         justify-content: center;
         border-right: 0;
@@ -245,13 +196,16 @@
         height: 400px;
         width: 100%;
     }
+
     .about-left-text p {
         font-size: 22px;
         padding: 20px 20px;
     }
+
     .single-feature {
         border-bottom: 1px solid white;
     }
+
     .about-border-bottom {
         border-bottom: none;
     }
@@ -262,105 +216,117 @@
         width: 55px;
         height: 55px;
     }
+
     .single-feature-right h4 {
         font-size: 22px;
         line-height: 25px;
     }
+
     .about-bottom-left img {
         height: 345px;
     }
+
     .about-left-text p {
         font-size: 20px;
         padding: 20px 24px;
         line-height: 25px;
     }
-    .about-title h2 {
-        font-size: 28px;
-    }
+
     .about-bottom-right {
         padding-top: 25px;
     }
+
     .services {
         gap: 4px;
     }
+
     .services .icon {
         padding: 2px 0px;
     }
+
     .services .icon svg {
         height: 10px;
+        width: 13px;
     }
-    .about-content-bottom button {
-        font-size: 11px;
-        padding: 18px 30px;
-    }
+
     .about-info {
         gap: 10px;
     }
+
     .about-info h4 {
         font-size: 20px;
     }
+
     .about-info span {
         font-size: 14px;
     }
+
     .about-content-bottom {
         gap: 25px;
     }
+
     .services p {
         font-size: 16px;
     }
+
     .about-content-middle p.text {
         font-size: 14px;
         padding-bottom: 20px;
     }
+
     .about-title {
         padding-bottom: 14px;
     }
+
     .about-bottom-right {
         padding-left: 0px;
     }
+
     .about-bottom {
         padding-bottom: 70px;
     }
 }
-@media (max-width: 480px){
+
+@media (max-width: 480px) {
     .services p {
         font-size: 12px;
     }
+
     .about-content-middle p.text {
         font-size: 12px;
         padding-bottom: 20px;
     }
 }
+
 @media (max-width: 400px) {
-    .about-title h2 {
-        font-size: 24px;
-    }
-    .about-content-top h5 {
-        font-size: 13px;
-    }
     .about-bottom-left img {
         height: 280px;
     }
+
     .single-feature-right h4 {
         font-size: 18px;
         line-height: 25px;
     }
+
     .single-feature-left img {
         width: 50px;
         height: 50px;
     }
-    .about-content-bottom button {
-        font-size: 9px;
-        padding: 10px 15px;
-    }
+
     .about-info img {
         width: 45px;
         height: 45px;
     }
+
     .about-info h4 {
         font-size: 14px;
     }
+
     .about-info span {
         font-size: 12px;
+    }
+
+    .about-bottom-right .style2 {
+        padding-bottom: 0px;
     }
 }

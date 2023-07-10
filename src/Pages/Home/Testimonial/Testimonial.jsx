@@ -8,6 +8,7 @@ import t1_img from '../../../assets/image/t1-img.png';
 import t2_img from '../../../assets/image/t2-img.png';
 import t3_img from '../../../assets/image/t3-img.png';
 import OwlCarousel from 'react-owl-carousel2';
+import SectionHeading from '../../../Component/SectionHeading/SectionHeading';
 
 const Testimonial = () => {
     const options = {
@@ -39,11 +40,12 @@ const Testimonial = () => {
         <div className='testimonial-section'>
             <div className="container">
                 <div className="testimonial">
-                    <div className='logo'>
-                        <span><img src={logo} alt="" /></span>
-                        <span>Patient feedback</span>
-                    </div>
-                    <h2>Happy Patient says Something About our Service</h2>
+                <SectionHeading
+                  fastLine='Happy Patient says Something'
+                  secondLine='About our Service'
+                  textTop='Patient feedback'
+                  style2={true}
+                /> 
                 </div>
                 <div className="testimonial-carousel">
                     <OwlCarousel options={options}>

@@ -57,24 +57,6 @@
     align-items: center;
 }
 
-.doctor-button button {
-    color: var(--section-bg);
-    background-color: var(--primary-bg-color);
-    font-family: var(--font-rubik);
-    transition: all .4s ease-in-out;
-    text-transform: uppercase;
-    border: none;
-    font-weight: 600;
-    font-size: 13px;
-    padding: 22px 50px;
-    border-radius: 3px 42px 42px;
-}
-
-.doctor-button button:hover {
-    color: var(--primary-color);
-    background-color: var(--heading-color);
-}
-
 .appointment {
     margin-top: -175px;
     margin-left: 120px;
@@ -99,7 +81,6 @@
 .appointment-form .appointment-input {
     font-size: 15px;
     font-family: var(--font-rubik);
-    /* outline: 0; */
     width: 100%;
     display: inline-block;
     border: 0;
@@ -137,28 +118,6 @@
     padding-left: 50px;
     padding-top: 60px;
     padding-right: 40px;
-}
-
-.appointment-right .logo {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding-bottom: 20px;
-}
-
-.appointment-right .logo span {
-    font-size: 14px;
-    font-family: var(--font-rubik);
-    color: #3b615e;
-    text-transform: uppercase;
-}
-
-.appointment-right h2 {
-    font-size: 45px;
-    font-weight: 600;
-    font-family: var(--font-cormorant);
-    color: var(--primary-color);
-    padding-bottom: 40px;
 }
 
 .all-count {
@@ -230,7 +189,6 @@
 @media (max-width: 1200px) {
     .doctor-img img {
         height: 665px;
-
     }
 
     .number {
@@ -303,11 +261,6 @@
 
     .appointment-right {
         padding-top: 30px;
-    }
-
-    .appointment-right h2 {
-        font-size: 36px;
-        padding-bottom: 35px;
     }
 
     .all-count {
@@ -385,11 +338,6 @@
         font-size: 14px;
     }
 
-    .doctor-button button {
-        font-size: 12px;
-        padding: 20px 40px;
-    }
-
     .appointment-left h3 {
         padding: 30px 10px;
     }
@@ -424,22 +372,12 @@
         display: block;
         font-size: 17px;
     }
-
-    .appointment-right h2 {
-        font-size: 30px;
-        padding-bottom: 28px;
-    }
 }
 
 @media (max-width: 390px) {
     .appointment-left h3 {
         font-size: 26px;
         padding: 30px 10px;
-    }
-
-    .appointment-right h2 {
-        font-size: 27px;
-        padding-bottom: 25px;
     }
 
     .all-count .customer-count .single-count {
@@ -472,11 +410,6 @@
 @media (max-width: 370px) {
     .doctor-button {
         gap: 20px
-    }
-
-    .doctor-button button {
-        font-size: 12px;
-        padding: 20px 25px;
     }
 
     .doctor-img img {

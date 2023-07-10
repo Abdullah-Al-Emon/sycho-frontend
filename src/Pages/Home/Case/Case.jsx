@@ -23,17 +23,14 @@ const Case = () => {
         ],
         responsive: {
             0: {
-                items: 1
+                items: 2
             },
             481:{
                 items: 2
             },
-            735: {
+            715: {
                 items: 2
             },
-            736: {
-                items: 3
-            }
         }
     };
     return (

@@ -12,15 +12,6 @@
     padding-bottom: 10px;
 }
 
-.cost-top .cost-title h2 {
-    color: var(--primary-color);
-    font-size: 45px;
-    font-family: var(--font-cormorant);
-    font-weight: bold;
-    text-transform: capitalize;
-    padding-bottom: 10px;
-}
-
 .cost-top .cost-title p {
     color: #848b8a;
     font-family: var(--font-rubik);
@@ -114,41 +105,33 @@
     background: linear-gradient(to left, #eae6e2 0%, #d7d3cf 20%, #d7d3cf 70%, #eae6e2 100%);
 }
 
-.cost-content .cost-desc button {
-    color: var(--section-bg);
-    background-color: var(--primary-bg-color);
-    font-family: var(--font-rubik);
-    transition: all .4s ease-in-out;
-    text-transform: uppercase;
-    border: none;
-    font-weight: 600;
-    font-size: 13px;
-    padding: 22px 50px;
-    border-radius: 3px 42px 42px;
-    margin-top: 10px;
+.cost-content .button{
     margin-bottom: -25px;
 }
 
-.cost-content button:hover {
+.cost-content .middle .button {
     color: var(--section-bg);
     background-color: var(--heading-color);
 }
 
-.cost-content button.middle {
-    color: var(--section-bg);
-    background-color: var(--heading-color);
-}
-
-.cost-content button.middle:hover {
+.cost-content .middle .button:hover {
     color: var(--section-bg);
     background-color: var(--primary-bg-color);
 }
 
-@media (max-width: 991px) {
-    .cost-top .cost-title h2 {
-        font-size: 35px;
+@media (max-width: 1200px) {
+    .cost-content .cost-desc p{
+        padding: 0px 20px;
     }
+    .cost-content .cost-desc .line{
+        margin: 22px auto;
+    }
+    .cost-content .cost-price{
+        left: 26.5%;
+    }
+}
 
+@media (max-width: 991px) {
     .cost-top .cost-title p {
         font-size: 13px;
     }
@@ -160,6 +143,9 @@
     .cost-section {
         padding-bottom: 60px;
     }
+    .cost-content .cost-price{
+        left: 28.5%;
+    }
 }
 
 @media (max-width: 767px) {
@@ -168,14 +154,14 @@
     }
 
     .cost-content .cost-desc p {
-        font-size: 15px;
-        padding: 0px 30px;
+        font-size: 14px;
+        padding: 0px 12px;
     }
 
     .cost-content .cost-price {
-        left: 36%;
-        width: 140px;
-        height: 140px;
+        left: 26%;
+        width: 120px;
+        height: 120px;
     }
 
     .cost-price h5 {
@@ -187,39 +173,37 @@
     }
 
     .cost-content .cost-desc {
-        padding-top: 65px;
+        padding-top: 50px;
     }
 
     .cost-content .cost-desc .line {
-        margin: 20px auto;
+        margin: 16px auto;
     }
 }
 
 @media (max-width: 575px) {
-
-    .cost-top .cost-title h2 {
-        font-size: 26px;
-    }
-
-    .cost-content .cost-desc button {
-        font-size: 11px;
-        padding: 20px 38px;
-    }
-
     .cost-content .cost-price {
-        left: 34.5%;
+        width: 140px;
+        height: 140px;
+        left: 36%;
+    }
+    .cost-content .cost-desc {
+        padding-top: 75px;
     }
     .cost-content .cost-desc p {
-        font-size: 15px;
-        padding: 0px 20px;
+        padding: 0px 60px;
     }
 }
 
-@media (max-width: 380px) {
-    .cost-top .cost-title h2 {
-        font-size: 24px;
+@media (max-width: 460px) {
+    .cost-content .cost-desc p {
+        padding: 0px 25px;
     }
-
+    .cost-content .cost-price {
+        left: 32%;
+    }
+}
+@media (max-width: 380px) {
     .cost-content .cost-price {
         left: 34%;
         width: 140px;
@@ -232,5 +216,8 @@
 @media (max-width: 380px) {
     .cost-content .cost-price {
         left: 29%;
+    }
+    .cost-content .cost-desc p {
+        padding: 0px 10px;
     }
 }

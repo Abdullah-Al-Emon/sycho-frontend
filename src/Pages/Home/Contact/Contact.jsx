@@ -1,6 +1,8 @@
 import React from 'react';
 import './Contact.css';
 import logo from '../../../assets/image/logo-icon.png';
+import SectionHeading from '../../../Component/SectionHeading/SectionHeading';
+import Button from '../../../Component/Button/Button';
 
 const Contact = () => {
   return (
@@ -9,11 +11,12 @@ const Contact = () => {
         <div className="row">
           <div className="col-lg-6">
             <div className="contact-left">
-              <div className='logo'>
-                <span><img src={logo} alt="" /></span>
-                <span>our achievement</span>
-              </div>
-              <h2>Have any Emergency problem Don't Hesitate</h2>
+              <SectionHeading
+                fastLine='Have any Emergency problem'
+                secondLine="Don't Hesitate"
+                textTop='our achievement'
+                style2={true}
+              />
               <div className='contact-form'>
                 <form>
                   <div className='input-div'>
@@ -30,7 +33,7 @@ const Contact = () => {
                     </select>
                   </div>
                   <textarea placeholder='Write Message' name="message" id="message" rows="5"></textarea>
-                  <button>Submit Message</button>
+                  <Button buttontext={'Submit Message'}/>
                 </form>
               </div>
             </div>
