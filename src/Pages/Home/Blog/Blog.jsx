@@ -30,7 +30,7 @@ const Blog = () => {
                                     <span className='month'>AUG</span>
                                 </div>
                                 <div className="top-icon-div"><img src={b3_icon} alt="" /> <span>Buffet Causta</span></div>
-                                <h3>Evening heaven on spirit them goes first create god together.</h3>
+                                <a href='' className='blog-title'>Evening heaven on spirit them goes first create god together.</a>
                                 <div className='bottom-icon-div'>
                                     <div><img src={b1_icon} alt="" /> <span>Couple Problem</span></div>
                                     <div><img src={b2_icon} alt="" /> <span>2 Comment</span></div>
@@ -49,7 +49,7 @@ const Blog = () => {
                                     <span className='month'>AUG</span>
                                 </div>
                                 <div className="top-icon-div"><img src={b3_icon} alt="" /> <span>Darwen Hazard</span></div>
-                                <h3>Fifth forth moved were kind moving tree abundantly called.</h3>
+                                <a href='' className='blog-title'>Fifth forth moved were kind moving tree abundantly called.</a>
                                 <div className='bottom-icon-div'>
                                     <div><img src={b1_icon} alt="" /> <span>Personal Meeting</span></div>
                                     <div><img src={b2_icon} alt="" /> <span>2 Comment</span></div>
@@ -68,7 +68,7 @@ const Blog = () => {
                                     <span className='month'>AUG</span>
                                 </div>
                                 <div className="top-icon-div"><img src={b3_icon} alt="" /> <span>Eleyas Metrobe</span></div>
-                                <h3>Doesn midst whose fish beast subdue shall also setting out can.</h3>
+                                <a href='' className='blog-title'>Doesn midst whose fish beast subdue shall also setting out can.</a>
                                 <div className='bottom-icon-div'>
                                     <div><img src={b1_icon} alt="" /> <span>Couple Problem</span></div>
                                     <div><img src={b2_icon} alt="" /> <span>2 Comment</span></div>
