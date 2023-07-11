@@ -17,24 +17,30 @@ const Footer = () => {
     dotsData: false,
     autoplay: true,
     margin: 10,
+    center:true,
+    rewind:true,
+    loop:true,
     responsive: {
-      0: {
-        items: 1
-      },
-      460: {
+      0:{
         items: 2
       },
-      767:{
-        items:3
-      },
-      1100: {
+      340: {
         items: 3
       },
-      1200: {
+      450: {
         items: 4
       },
-      1300: {
+      767:{
+        items:4
+      },
+      1100: {
         items: 4
+      },
+      1200: {
+        items: 5
+      },
+      1300: {
+        items: 5
       },
       1400:{
         items: 5

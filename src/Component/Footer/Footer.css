@@ -57,13 +57,13 @@ a {
     text-align: center;
 }
 
-.brand-logo-all{
-    padding-top: 8px;
+.brand-logo-all {
+    padding-top: 23px;
 }
 
 .brand-logo-all img {
-    width: 180px !important;
-    margin: auto !important;
+    width: 150px !important;
+    /* margin: auto !important; */
 }
 
 .footer-main {
@@ -204,7 +204,7 @@ a {
     transition: all .3s ease-in-out;
 }
 
-.footer-input-div input:focus{
+.footer-input-div input:focus {
     outline: 1px solid var(--primary-bg-color);
 }
 
@@ -215,7 +215,7 @@ a {
     color: var(--heading-color);
 }
 
-.footer-touch-desc button{
+.footer-touch-desc button {
     color: var(--section-bg);
     background-color: var(--primary-bg-color);
     font-family: var(--font-rubik);
@@ -231,12 +231,16 @@ a {
     gap: 8px;
 }
 
-.footer-touch-desc button:hover{
+.footer-touch-desc button:hover {
     color: var(--primary-color);
     background-color: var(--heading-color);
 }
 
-
+@media (max-width: 1399px) {
+    .brand-logo-all img {
+        width: 140px !important;
+    }
+}
 
 @media (max-width:1300px) {
     .footer-about-content p {
@@ -250,17 +254,20 @@ a {
         font-size: 40px;
         height: 100%;
     }
-    .brand-logo-all img {
-        width: 160px !important;
-        margin: auto !important;
+
+    .brand-logo-all {
+        padding-top: 18px;
     }
+
     .footer-icon {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .footer-input-div input {
         padding: 20px 26px;
     }
+
     .footer-touch-desc button {
         font-size: 12px;
         padding: 20px 25px;
@@ -272,55 +279,74 @@ a {
         flex-direction: column;
         gap: 10px;
     }
+
+    .brand-logo-all {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
     .footer-icon {
         justify-content: start;
     }
+
     .footer-main {
         padding-top: 60px;
     }
+
     .footer-top {
         padding-top: 80px;
         padding-bottom: 40px;
     }
+
     .brand-title {
         padding: 24px 20px;
         font-size: 37px;
         height: 100%;
     }
-    .brand-logo-all img {
-        width: 155px !important;
-        margin: auto !important;
-    }
-    .footer-info, .footer-touch{
+
+    .footer-info,
+    .footer-touch {
         padding-top: 25px;
     }
 }
 
-@media (max-width: 767px) {
-    .footer-service{
+@media (max-width: 768px) {
+    .footer-service {
         padding-top: 25px;
+    }
+
+    .brand-logo-all img {
+        width: 120px !important;
     }
 }
 
 @media (max-width: 575px) {
-    .footer-bottom-left p, .footer-bottom-right p, a  {
-        text-align: center;
-        font-size: 14px;
+    .brand-logo-all img {
+        width: 100px !important;
     }
 
-    .brand-logo-all img {
-        width: 150px !important;
+    .footer-bottom-left p,
+    .footer-bottom-right p,
+    a {
+        text-align: center;
+        font-size: 14px;
     }
 
     .brand-title {
         font-size: 35px;
     }
-    .footer-service, .footer-info, .footer-touch, .footer-about{
+
+    .footer-service,
+    .footer-info,
+    .footer-touch,
+    .footer-about {
         padding-left: 35px;
     }
+
     .footer-social h4 {
         margin-bottom: 16px;
     }
+
     .footer-about-content {
         padding-top: 20px;
         padding-bottom: 15px;
@@ -328,30 +354,55 @@ a {
 }
 
 @media (max-width:400px) {
+    .brand-title {
+        font-size: 30px;
+    }
+
     .footer-service ul li a {
         font-size: 14px;
     }
 
-    .footer-info p span, .footer-touch p span, .footer-about p span {
+    .footer-service,
+    .footer-info,
+    .footer-touch,
+    .footer-about {
+        padding-left: 20px;
+    }
+
+    .footer-info p span,
+    .footer-touch p span,
+    .footer-about p span {
         font-size: 15px;
     }
+
     .footer-main h3 {
         font-size: 28px;
         padding-bottom: 15px;
     }
+
     .footer-social h4 {
         font-size: 25px;
     }
+
     .footer-touch-desc p {
         font-size: 15px;
     }
-    .footer-info-details p{
+
+    .footer-info-details p {
         font-size: 15px;
     }
+
     .footer-info-address p {
         font-size: 15px;
     }
+
     .footer-info-address a {
         font-size: 15px;
+    }
+}
+
+@media (max-width: 380px) {
+    .brand-title {
+        font-size: 26px;
     }
 }
