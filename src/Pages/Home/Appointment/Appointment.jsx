@@ -2,14 +2,14 @@ import React from 'react';
 import './Appointment.css';
 import dc_img from '../../../assets/image/doctor-img.png';
 import signature_img from '../../../assets/image/signature.png';
-import logo from '../../../assets/image/logo-icon.png';
+import doctor_bg from '../../../assets/image/feture-bg.png';
 import SectionHeading from '../../../Component/SectionHeading/SectionHeading';
 import Button from '../../../Component/Button/Button';
 
 const Appointment = () => {
     return (
         <div className='appointment-section'>
-            <div className="doctor-info">
+            <div className="doctor-info" style={{backgroundImage: `url(${doctor_bg})`}}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-5">

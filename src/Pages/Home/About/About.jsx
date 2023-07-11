@@ -4,7 +4,8 @@ import f1_icon from '../../../assets/image/f1-icon.png';
 import f2_icon from '../../../assets/image/f2-icon.png';
 import f3_icon from '../../../assets/image/f3-icon.png';
 import about_img from '../../../assets/image/about-img.png';
-import logo from '../../../assets/image/logo-icon.png';
+import about_bg from '../../../assets/image/feture-bg.png';
+import left_bg from '../../../assets/image/about-left-text-bg.png';
 import about_more from '../../../assets/image/about-more.png'
 import { Icon } from '@iconify/react';
 import SectionHeading from '../../../Component/SectionHeading/SectionHeading';
@@ -14,7 +15,7 @@ const About = () => {
   return (
 
     <div>
-      <div className='about-section'>
+      <div className='about-section' style={{ backgroundImage: `url(${about_bg})` }}>
         <div className="about-top">
           <div className="about-border-bottom">
             <div className='container'>
@@ -63,7 +64,7 @@ const About = () => {
             <div className="col-lg-6 ">
               <div className="about-bottom-left">
                 <img src={about_img} alt="" />
-                <div className='about-left-text'>
+                <div className='about-left-text' style={{ backgroundImage: `url(${left_bg})` }}>
                   <p>20 Years <br /> Professional <br /> Experience</p>
                 </div>
               </div>

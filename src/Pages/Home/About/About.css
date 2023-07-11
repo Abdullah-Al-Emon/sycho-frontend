@@ -1,5 +1,4 @@
 .about-section {
-    background-image: url('../../../assets/image/feture-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -60,7 +59,6 @@
 }
 
 .about-left-text {
-    background-image: url('../../../assets/image/about-left-text-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -102,7 +100,8 @@
 .services .icon {
     background: var(--heading-color);
     border-radius: 50%;
-    padding: 3px 2px;
+    height: 20px;
+    width: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -241,7 +240,8 @@
     }
 
     .services .icon {
-        padding: 2px 0px;
+        height: 15px;
+        width: 15px;
     }
 
     .services .icon svg {
@@ -266,11 +266,11 @@
     }
 
     .services p {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .about-content-middle p.text {
-        font-size: 14px;
+        font-size: 12px;
         padding-bottom: 20px;
     }
 
@@ -284,17 +284,6 @@
 
     .about-bottom {
         padding-bottom: 70px;
-    }
-}
-
-@media (max-width: 480px) {
-    .services p {
-        font-size: 12px;
-    }
-
-    .about-content-middle p.text {
-        font-size: 12px;
-        padding-bottom: 20px;
     }
 }
 
@@ -328,5 +317,9 @@
 
     .about-bottom-right .style2 {
         padding-bottom: 0px;
+    }
+    .services .icon {
+        height: 13px;
+        width: 13px;
     }
 }

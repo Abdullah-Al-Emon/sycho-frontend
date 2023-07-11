@@ -1,0 +1,123 @@
+.testimonial-card .testimonial-top {
+    padding: 33px 33px;
+    background-color: var(--section-bg);
+    position: relative;
+}
+
+.testimonial-top .testimonial-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial-top .testimonial-img .t-img-left {
+    display: flex;
+    gap: 4px;
+}
+
+.testimonial-top .testimonial-img .t-img-left img {
+    width: 18px !important;
+    height: 18px;
+}
+
+.testimonial-top .testimonial-img .t-img-right img {
+    width: 100px !important;
+    position: absolute;
+    right: 18px;
+}
+
+.testimonial-top .testimonial-desc {
+    padding-top: 25px;
+    font-size: 18px;
+    font-family: var(--font-rubik);
+    color: #848b8a;
+    text-align: justify;
+}
+
+.testimonial-bottom {
+    background-color: var(--primary-bg-color);
+    display: flex;
+    padding: 20px 20px;
+    align-items: center;
+    gap: 15px;
+}
+
+.testimonial-bottom img {
+    width: 80px !important;
+}
+
+.testimonial-bottom h4 {
+    font-size: 27px;
+    font-weight: 600;
+    font-family: var(--font-cormorant);
+}
+
+@media (max-width: 1399px) {
+    .testimonial-card .testimonial-top {
+        padding: 19px 19px;
+    }
+}
+@media (max-width: 1200px) {
+    .testimonial-top .testimonial-desc {
+        padding-top: 13px;
+        font-size: 15px;
+    }
+
+    .testimonial-bottom img {
+        width: 60px !important;
+    }
+
+    .testimonial-bottom h4 {
+        font-size: 22px;
+    }
+
+    .testimonial-bottom p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .testimonial-card .testimonial-top {
+        padding: 25px 25px;
+    }
+
+    .testimonial-top .testimonial-desc {
+        font-size: 16px;
+    }
+}
+@media (max-width: 540px) {
+    .testimonial-card .testimonial-top {
+        padding: 18px 18px;
+    }
+
+    .testimonial-top .testimonial-desc {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 410px) {
+    .testimonial-top .testimonial-desc {
+        font-size: 14px;
+    }
+}
+@media (max-width: 395px) {
+    .testimonial-bottom h4 {
+        font-size: 20px;
+    }
+
+    .testimonial-top .testimonial-desc {
+        padding-top: 13px;
+        font-size: 13px;
+    }
+
+    .testimonial-bottom {
+        padding: 15px 15px;
+    }
+
+    .testimonial-bottom img {
+        width: 50px !important;
+    }
+
+    .testimonial-bottom p {
+        font-size: 12px;
+    }
+}

@@ -1,12 +1,12 @@
 import React from 'react';
 import './Contact.css';
-import logo from '../../../assets/image/logo-icon.png';
+import contact_bg from '../../../assets/image/client-bg.png';
 import SectionHeading from '../../../Component/SectionHeading/SectionHeading';
 import Button from '../../../Component/Button/Button';
 
 const Contact = () => {
   return (
-    <div className='contact-section'>
+    <div className='contact-section' style={{backgroundImage: `url(${contact_bg})`}}>
       <div className="container">
         <div className="row">
           <div className="col-lg-6">

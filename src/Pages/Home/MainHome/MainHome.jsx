@@ -13,6 +13,7 @@ import Cost from '../Cost/Cost';
 import Contact from '../Contact/Contact';
 import Testimonial from '../Testimonial/Testimonial';
 import Blog from '../Blog/Blog';
+import banner_bg from '../../../assets/image/banner-bg.png'
 
 const MainHome = () => {
   const options = {
@@ -28,7 +29,7 @@ const MainHome = () => {
   };
   return (
     <div>
-      <div className="banner">
+      <div className="banner" style={{backgroundImage: `url(${banner_bg})`}}>
         <OwlCarousel options={options}>
           <div className='item' data-dot="<span>01</span>">
             <Banner img={b1_img} />

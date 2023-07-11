@@ -6,6 +6,7 @@ import c2_img from '../../../assets/image/client2-img.png';
 import c3_img from '../../../assets/image/client3-img.png';
 import c4_img from '../../../assets/image/client4-img.png';
 import c5_img from '../../../assets/image/client5-img.png';
+import client_bg from '../../../assets/image/client-bg.png';
 
 const Client = () => {
     const options = {
@@ -35,7 +36,7 @@ const Client = () => {
         }
     };
     return (
-        <div className='client-section'>
+        <div className='client-section' style={{backgroundImage: `url(${client_bg})`}}>
             <OwlCarousel options={options}>
                 <div className='item'>
                     <img src={c1_img} alt="" />

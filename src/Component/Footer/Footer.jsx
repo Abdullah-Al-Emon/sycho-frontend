@@ -8,7 +8,7 @@ import b5_img from '../../assets/image/brand-5.png';
 import logo from '../../assets/image/logo.png';
 import msg from '../../assets/image/sycho-psd.png';
 import OwlCarousel from 'react-owl-carousel2';
-import b_icon from '../../assets/image/button-icon.png';
+import footer_bg from '../../assets/image/footer-top-bg.png';
 import { Icon } from '@iconify/react';
 
 const Footer = () => {
@@ -51,7 +51,7 @@ const Footer = () => {
     <div className='footer-section'>
       <div className="container">
         <div className="footer-top">
-          <div className="footer-brand">
+          <div className="footer-brand" style={{backgroundImage: `url(${footer_bg})`}}>
             <div className="row">
               <div className="col-lg-3">
                 <div className="brand-title">
