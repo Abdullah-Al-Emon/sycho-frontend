@@ -42,7 +42,7 @@ const Blog = () => {
                     </div>
                     <div className="col-lg-4 col-md-6 col-sm-6">
                         <BlogCard
-                            blogCardImg={b2_img}
+                            blogCardImg={b3_img}
                             blogDate={'28'}
                             blogMonth={'AUG'}
                             blogText={'Eleyas Metrobe'}
